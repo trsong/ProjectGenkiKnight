@@ -3,6 +3,7 @@ Game Project for CS526
 
 # Team Members 
 - Tangrui Song (trsong.cs@gmail.com)
+- Difei Sun (sdfqb009@gmail.com)
 
 # Useful Links
 - Unity Tutorial: [https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6](https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6)

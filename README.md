@@ -21,6 +21,7 @@ Game Project for CS526
 - [2D UI, Game, Level Design (1h43m)](https://www.linkedin.com/learning/cert-prep-unity-ui-and-2d-games/create-intuitive-ui-and-2d-games?u=76870426)
 - [2D Level Design, Door and Switches Loic (2h8m)](https://www.linkedin.com/learning/unity-5-2d-level-design/welcome?u=76870426)
 - [Turn-based 2D Combat System (2h11m)](https://www.linkedin.com/learning/unity-5-2d-combat-in-an-rpg-game/welcome?u=76870426)
+- [Build a Character Dialog System (1h45m)](https://www.linkedin.com/learning/unity-5-build-a-character-dialogue-system/welcome?u=76870426)
 
 # Game Mechanism Tutorials
 - [RPG 角色，属性，等级，装备，伤害计算](https://www.bilibili.com/read/cv3815187/)

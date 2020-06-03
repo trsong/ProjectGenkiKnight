@@ -2,8 +2,8 @@
 Game Project for CS526
 
 # Team Members 
-- Tangrui Song (trsong.cs@gmail.com)
 - Difei Sun (sdfqb009@gmail.com)
+- New Team Member
 
 # Useful Links
 - [Past Game for reference: Sokoban Maker Doc](https://docs.google.com/document/d/1dyBqnhk4F1RAbA_PRE2AHykSwVB3C539JTvrGWFR0VU/edit?ts=5e2fa577)

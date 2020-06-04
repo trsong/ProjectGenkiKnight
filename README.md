@@ -5,6 +5,9 @@ Game Project for CS526
 - Difei Sun (sdfqb009@gmail.com)
 - Tangrui Song (trsong.cs@gmail.com)
 
+# Updates
+- Jun 3, Git Large File Storage Suport Added, Please Follow [Git Large File Tutorial](https://git-lfs.github.com)
+
 # Useful Links
 - [Past Game for reference: Sokoban Maker Doc](https://docs.google.com/document/d/1dyBqnhk4F1RAbA_PRE2AHykSwVB3C539JTvrGWFR0VU/edit?ts=5e2fa577)
 - [Team Google Drive Folder](https://drive.google.com/drive/u/1/folders/1R-VwvLrCZWiXOCyRUebD0GwZyeoLZqsF?ths=true)

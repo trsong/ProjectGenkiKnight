@@ -5,6 +5,7 @@ Game Project for CS526
 - Difei Sun (sdfqb009@gmail.com)
 - Tangrui Song (trsong.cs@gmail.com)
 - Bo Wang (bwang381@usc.edu)
+- Ruofu Wang (ruofuwan@usc.edu)
 
 # Updates
 - Jun 3, Git Large File Storage Suport Added, Please Follow [Git Large File Tutorial](https://git-lfs.github.com)

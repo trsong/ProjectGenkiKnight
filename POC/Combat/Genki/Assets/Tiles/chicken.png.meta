@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: cec9fb1c422437b42b10fb480a403744
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8678448789981272047
+    second: chicken_0
+  - first:
+      213: -1249941551368896030
+    second: chicken_1
+  - first:
+      213: -8985877945988413723
+    second: chicken_2
+  - first:
+      213: 1024765088451093750
+    second: chicken_3
+  - first:
+      213: 7067989680129746051
+    second: chicken_4
+  - first:
+      213: -3409965803568616162
+    second: chicken_5
+  - first:
+      213: -1060385466176214303
+    second: chicken_6
+  - first:
+      213: 1982236941027235123
+    second: chicken_7
+  - first:
+      213: 5700001933450316269
+    second: chicken_8
+  - first:
+      213: 8078689190530432609
+    second: chicken_9
+  - first:
+      213: 2932204640085858569
+    second: chicken_10
+  - first:
+      213: 8397036521877985021
+    second: chicken_11
+  - first:
+      213: 1989340475391353814
+    second: chicken_12
+  - first:
+      213: 3287223345940005231
+    second: chicken_13
+  - first:
+      213: -3899168283459314129
+    second: chicken_14
+  - first:
+      213: -6953439314626798769
+    second: chicken_15
+  - first:
+      213: 1451877529335037524
+    second: chicken_16
+  - first:
+      213: 4751312474336577107
+    second: chicken_17
+  - first:
+      213: -1327240394764321997
+    second: chicken_18
+  - first:
+      213: -5243306932946398541
+    second: chicken_19
+  - first:
+      213: 304957982343581140
+    second: chicken_20
+  - first:
+      213: -9203612468868981100
+    second: chicken_21
+  - first:
+      213: 2960768784704303553
+    second: chicken_22
+  - first:
+      213: 112652986892524079
+    second: chicken_23
+  - first:
+      213: 8359217320515052714
+    second: chicken_24
+  - first:
+      213: 3938736763810744016
+    second: chicken_25
+  - first:
+      213: 7987520634344127077
+    second: chicken_26
+  - first:
+      213: -5149409686772464062
+    second: chicken_27
+  - first:
+      213: -8344925227253998297
+    second: chicken_28
+  - first:
+      213: 7846429964971703644
+    second: chicken_29
+  - first:
+      213: -2480827710714329790
+    second: chicken_30
+  - first:
+      213: 4944558267728510045
+    second: chicken_31
+  - first:
+      213: -1562927040203716668
+    second: chicken_32
+  - first:
+      213: -8888207508903732937
+    second: chicken_33
+  - first:
+      213: 8218546907811986432
+    second: chicken_34
+  - first:
+      213: -7468064751715966962
+    second: chicken_35
+  - first:
+      213: -4033715104383035125
+    second: chicken_36
+  - first:
+      213: 7640037540787291317
+    second: chicken_37
+  - first:
+      213: 4952786812337173142
+    second: chicken_38
+  - first:
+      213: 3855837439158548732
+    second: chicken_39
+  - first:
+      213: 2871263486420526650
+    second: chicken_40
+  - first:
+      213: 5664824708907203565
+    second: chicken_41
+  - first:
+      213: -4346062153953128191
+    second: chicken_42
+  - first:
+      213: 5069689447076988421
+    second: chicken_43
+  - first:
+      213: -4929317857445026135
+    second: chicken_44
+  - first:
+      213: 4506422877499758428
+    second: chicken_45
+  - first:
+      213: 8169573463695228653
+    second: chicken_46
+  - first:
+      213: 7620577214646281683
+    second: chicken_47
+  - first:
+      213: -221431294983058474
+    second: chicken_0
+  - first:
+      213: -5345815943074807314
+    second: chicken_1
+  - first:
+      213: -4616721632339436527
+    second: chicken_2
+  - first:
+      213: 685300271132176624
+    second: chicken_3
+  - first:
+      213: 4955673720103299699
+    second: chicken_4
+  - first:
+      213: 3909431321740312
+    second: chicken_5
+  - first:
+      213: -7231868296949393532
+    second: chicken_6
+  - first:
+      213: -4027900102774666259
+    second: chicken_7
+  - first:
+      213: -5384443693950900506
+    second: chicken_8
+  - first:
+      213: 3547863753662644160
+    second: chicken_9
+  - first:
+      213: 8038008338554408898
+    second: chicken_10
+  - first:
+      213: 6569015799418949085
+    second: chicken_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chicken_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db416019615decf0800000000000000
+      internalID: -221431294983058474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1086e19b8dfc5b0800000000000000
+      internalID: -5345815943074807314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cdb85c22c1eefb0800000000000000
+      internalID: -4616721632339436527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0ff4937fca28900800000000000000
+      internalID: 685300271132176624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37aee7dfdf616c440800000000000000
+      internalID: 4955673720103299699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814c4396b93ed0000800000000000000
+      internalID: 3909431321740312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4871ce9991e33ab90800000000000000
+      internalID: -7231868296949393532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb4b5f72360a18c0800000000000000
+      internalID: -4027900102774666259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6e6f40dfc9645b0800000000000000
+      internalID: -5384443693950900506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfbb8c594b8c3130800000000000000
+      internalID: 3547863753662644160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfc9292ffdbc8f60800000000000000
+      internalID: 8038008338554408898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd8b40c015d92b50800000000000000
+      internalID: 6569015799418949085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

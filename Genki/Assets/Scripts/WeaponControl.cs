@@ -24,9 +24,9 @@ public class WeaponControl : MonoBehaviour
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = rotation;
         if(rotation.eulerAngles.z < 270 && rotation.eulerAngles.z > 90 ){
-            sprite.sortingOrder = -1;
+            sprite.sortingOrder = 4;
         }else{
-            sprite.sortingOrder = 1;
+            sprite.sortingOrder = 6;
         }
     }
 

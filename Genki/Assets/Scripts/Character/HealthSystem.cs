@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Genki.Control;
 using UnityEngine;
 
 namespace Genki.Character
@@ -10,7 +11,7 @@ namespace Genki.Character
         public float maxHealthPoint = 100f;
         public float currentHealthPoint = 100f;
         public bool canSelfRegen = false;
-        public HealthBar healthBar = null;
+        public HealthBarControl healthBar = null;
 
         public float healthAsPercentage
         {
@@ -62,6 +63,7 @@ namespace Genki.Character
 
         IEnumerator KillCharacter()
         {
+            Destroy(gameObject);
             yield return null;
         }
         

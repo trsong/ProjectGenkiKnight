@@ -9,26 +9,31 @@ namespace Genki.Character
 
     public class CharacterSystem : MonoBehaviour
     {
-        
         public EnemyType enemyType = EnemyType.Player;
         public bool canAttack = true;
         public bool canInteract = false;
         
         public float speed = 5f;
         public Rigidbody2D rigidbody;
-        public Animator animator;
+        public Animator animator = null;
         
         Vector2 move;
         
         void Update()
-        {    
-            animator.SetFloat("Hor", move.x);
-            animator.SetFloat("Ver", move.y);
+        {
+            if (animator)
+            {
+                animator.SetFloat("Hor", move.x); 
+                animator.SetFloat("Ver", move.y);
+            }
         }
 
         void FixedUpdate()
         {
-            rigidbody.MovePosition(rigidbody.position + move*speed * Time.fixedDeltaTime);
+            if (rigidbody)
+            {
+                rigidbody.MovePosition(rigidbody.position + move*speed * Time.fixedDeltaTime);
+            }
         }
 
         public bool isEnemy()

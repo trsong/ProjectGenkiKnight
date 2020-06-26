@@ -701,6 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d582b91a62e42499ce2100609c42728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePoint: {fileID: 1859306605}
 --- !u!114 &999222993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,9 +726,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd919ec45efa4cde8670ec5a68d21a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 6199990765139538479, guid: fa8441fa48295954e85f07658ce49470, type: 3}
   baseDamage: 10
   criticalHitChance: 0.1
   criticalHitMultiplier: 2
+  meleeDamage: 0
 --- !u!114 &999222995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,6 +747,12 @@ MonoBehaviour:
   currentHealthPoint: 100
   canSelfRegen: 1
   healthBar: {fileID: 355494749}
+--- !u!20 &1127176617 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2134799320285392112, guid: 3aae154d204c4df43b8bace50bdf8c19,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431359494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1171625328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1023,18 @@ Transform:
   m_Father: {fileID: 333669842}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1859306605 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2134799321021058476, guid: 3aae154d204c4df43b8bace50bdf8c19,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431359494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1859306606 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2134799321021058475, guid: 3aae154d204c4df43b8bace50bdf8c19,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431359494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1996579298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,3 +1065,23 @@ Transform:
   m_Father: {fileID: 333669842}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2112773238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2134799319102815354, guid: 3aae154d204c4df43b8bace50bdf8c19,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431359494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2112773240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112773238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21beecf14140e746b12f41722ca7f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1127176617}
+  sprite: {fileID: 1859306606}

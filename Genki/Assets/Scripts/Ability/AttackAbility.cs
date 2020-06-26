@@ -16,7 +16,7 @@ namespace Genki.Abilitiy
             if (owner != null)
             {
                 var weaponSystem = owner.GetComponent<WeaponSystem>();
-                weaponSystem.AttackTarget(target);
+                // weaponSystem.AttackTarget(target);
             }
         }
     }

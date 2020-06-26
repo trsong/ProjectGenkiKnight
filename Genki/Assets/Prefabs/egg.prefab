@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6199990765139538476}
   - component: {fileID: 6199990765139538477}
   - component: {fileID: -8743362876522893093}
+  - component: {fileID: 8970865121739468850}
   m_Layer: 0
   m_Name: egg
   m_TagString: Bullet
@@ -133,3 +134,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9969037502aab44a3681b0ff862581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8970865121739468850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6199990765139538479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db0ceaf964c48629822b7dc77aefb2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAttackRange: 2
+  weaponDamage: 10
+  timeToWaitBetweenHits: 2.5
+  bulletForce: 20

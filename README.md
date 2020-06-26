@@ -10,10 +10,10 @@ Game Project for CS526
 # Updates
 - Jun 3, Git Large File Storage Suport Added, Please Follow [Git Large File Tutorial](https://git-lfs.github.com)
 - Jun 8, so as not to checkin large and useless file, please add [.gitignore](https://raw.githubusercontent.com/github/gitignore/master/Unity.gitignore) to unity project root (where Library/ folder locats). 
-- Midterm Gameplay URL: https://trsong.github.io/Genki/
-- Midterm Demo URL: https://youtu.be/IxvhfoNQp0M
-- Midterm Feedback: https://docs.google.com/spreadsheets/d/18kGByc2Ii6ljpb96uCYr5Rlkjbwpx9p4YnHPvyBx15A/edit#gid=469799691
-- Midterm Retrospective and Action Item: https://docs.google.com/document/d/1Njw5Zg228YvnD1VRBEBNodk5F-VKkmDng-UpH6ZbBjg/edit#
+- [Midterm Gameplay URL](https://trsong.github.io/Genki/)
+- [Midterm Demo URL](https://youtu.be/IxvhfoNQp0M)
+- [Midterm Feedback](https://docs.google.com/spreadsheets/d/18kGByc2Ii6ljpb96uCYr5Rlkjbwpx9p4YnHPvyBx15A/edit#gid=469799691)
+- [Midterm Retrospective and Action Item](https://docs.google.com/document/d/1Njw5Zg228YvnD1VRBEBNodk5F-VKkmDng-UpH6ZbBjg/edit#)
 
 # Useful Links
 - [Past Game for reference: Sokoban Maker Doc](https://docs.google.com/document/d/1dyBqnhk4F1RAbA_PRE2AHykSwVB3C539JTvrGWFR0VU/edit?ts=5e2fa577)

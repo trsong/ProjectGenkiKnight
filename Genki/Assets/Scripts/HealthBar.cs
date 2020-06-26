@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    public CharacterControl player;
+    float healthPercentage = 1.0f;
 
     void Update()
     {
-        this.transform.GetChild(0).localScale = new Vector3(player.health/100f,1,1);
+        this.transform.GetChild(0).localScale = new Vector3(healthPercentage,1,1);
+    }
+
+    public void setHealth(float updatedHealth)
+    {
+        this.healthPercentage = updatedHealth;
     }
 }

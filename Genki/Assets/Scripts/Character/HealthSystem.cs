@@ -10,7 +10,7 @@ namespace Genki.Character
         public float maxHealthPoint = 100f;
         public float currentHealthPoint = 100f;
         public bool canSelfRegen = false;
-        public MonoBehaviour healthBar = null;
+        public HealthBar healthBar = null;
 
         public float healthAsPercentage
         {
@@ -27,7 +27,7 @@ namespace Genki.Character
         {
             if (healthBar)
             {
-                
+                healthBar.setHealth(healthAsPercentage);
             }
         }
 
@@ -39,7 +39,7 @@ namespace Genki.Character
                 {
                     return;
                 }
-                Heal(5f);
+                Heal(0.05f);
             }
 
         }

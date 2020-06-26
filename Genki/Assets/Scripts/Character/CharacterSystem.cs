@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental;
 using UnityEngine;
 
 namespace Genki.Character
@@ -9,26 +10,36 @@ namespace Genki.Character
     public class CharacterSystem : MonoBehaviour
     {
         
-        public float moveSpeed  = 5f;
         public EnemyType enemyType = EnemyType.Player;
         public bool canAttack = true;
         public bool canInteract = false;
+        
+        public float speed = 5f;
+        public Rigidbody2D rigidbody;
+        public Animator animator;
+        
+        Vector2 move;
+        
+        void Update()
+        {    
+            animator.SetFloat("Hor", move.x);
+            animator.SetFloat("Ver", move.y);
+        }
+
+        void FixedUpdate()
+        {
+            rigidbody.MovePosition(rigidbody.position + move*speed * Time.fixedDeltaTime);
+        }
 
         public bool isEnemy()
         {
             return enemyType != EnemyType.Player & enemyType != EnemyType.NPC;
         }
 
-        // Start is called before the first frame update
-        void Start()
+        public void moveCharacter(float x, float y)
         {
-            
-        }
-    
-        // Update is called once per frame
-        void Update()
-        {
-            
+            move.x = x;
+            move.y = y;
         }
     }
 }

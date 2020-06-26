@@ -1,9 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Genki.Control;
 using UnityEngine;
 
 public class BulletCollision : MonoBehaviour
 {
+    public IUnitControl owner = null;
+
+    public void setOwner(IUnitControl newOwner)
+    {
+        owner = newOwner;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

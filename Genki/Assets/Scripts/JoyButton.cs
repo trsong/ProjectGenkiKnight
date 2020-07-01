@@ -15,4 +15,9 @@ public class JoyButton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     {
         pressed = true;
     }
+
+    public void SetUnPressed()
+    {
+        pressed = false;
+    }
 }

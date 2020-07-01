@@ -27,6 +27,7 @@ namespace Genki.Control
         void shoot(){
             // if(Input.GetButtonDown("Fire1") || joyButton.pressed){
             if(joyButton.pressed){
+                joyButton.SetUnPressed();
                 weaponSystem.shoot(firePoint);
             }
         }

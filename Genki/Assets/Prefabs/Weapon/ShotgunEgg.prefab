@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5259197917406913392}
   - component: {fileID: 5259197917406913393}
   - component: {fileID: 1756390306382127495}
-  - component: {fileID: 7100008547859276142}
+  - component: {fileID: 2839842343469009302}
   m_Layer: 0
   m_Name: ShotgunEgg
   m_TagString: Bullet
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9969037502aab44a3681b0ff862581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7100008547859276142
+--- !u!114 &2839842343469009302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,10 +143,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5259197917406913395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db0ceaf964c48629822b7dc77aefb2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 297f36a6e17d4567af26fad005a7b632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: Shotgun
   maxAttackRange: 2
   weaponDamage: 10
   timeToWaitBetweenHits: 2.5

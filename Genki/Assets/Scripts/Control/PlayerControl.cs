@@ -8,8 +8,15 @@ namespace Genki.Control
     public class PlayerControl : BaseUnitControl
     {
         public Transform firePoint;
-        public Joystick joyStick;
-        public JoyButton joyButton;
+        protected Joystick joyStick;
+        protected JoyButton joyButton;
+
+        protected override void Start()
+        {
+            base.Start();
+            joyStick = FindObjectOfType<Joystick>();
+            joyButton = FindObjectOfType<JoyButton>();
+        }
 
         void Update()
         {

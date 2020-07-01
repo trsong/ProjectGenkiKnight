@@ -2,8 +2,9 @@ using UnityEngine;
 
 namespace Genki.Weapon
 {
-    public class WeaponConfig: MonoBehaviour
+    public class WeaponConfig : MonoBehaviour
     {
+        public string weaponType = "Chicken";
         public float maxAttackRange = 2f;
         public float weaponDamage = 10f;
         public float timeToWaitBetweenHits = 2.5f;

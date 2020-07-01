@@ -51,8 +51,28 @@ namespace Genki.Character
 
         public void shoot(Transform firePoint)
         {
-            if (weapon.gameObject)
-            {
+            if(currentWeaponConfig.weaponType == "Shotgun"){
+                GameObject a = Instantiate(weapon.gameObject, firePoint.position, firePoint.rotation);
+                GameObject b = Instantiate(weapon.gameObject, firePoint.position, firePoint.rotation);
+                GameObject c = Instantiate(weapon.gameObject, firePoint.position, firePoint.rotation);
+                BulletCollision abc = a.GetComponent<BulletCollision>();
+                abc.owner = owner;
+                Rigidbody2D arb = a.GetComponent<Rigidbody2D>();
+                arb.AddForce(-firePoint.up * currentWeaponConfig.bulletForce + firePoint.right*2f, ForceMode2D.Impulse);
+
+                BulletCollision bbc = b.GetComponent<BulletCollision>();
+                bbc.owner = owner;
+                Rigidbody2D brb = b.GetComponent<Rigidbody2D>();
+                brb.AddForce(-firePoint.up * currentWeaponConfig.bulletForce, ForceMode2D.Impulse);
+
+                BulletCollision cbc = c.GetComponent<BulletCollision>();
+                cbc.owner = owner;
+                Rigidbody2D crb = c.GetComponent<Rigidbody2D>();
+                crb.AddForce(-firePoint.up * currentWeaponConfig.bulletForce - firePoint.right*2f, ForceMode2D.Impulse);
+            
+            }
+
+            if(currentWeaponConfig.weaponType== "Chicken"){
                 GameObject b = Instantiate(weapon.gameObject, firePoint.position, firePoint.rotation);
                 BulletCollision bc = b.GetComponent<BulletCollision>();
                 bc.owner = owner;

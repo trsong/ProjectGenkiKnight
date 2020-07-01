@@ -8,7 +8,11 @@ namespace Genki.Control
     {
         Vector2 mousePos;
         public Camera camera;
-        public SpriteRenderer sprite;
+        private SpriteRenderer sprite;
+        void Start()
+        {
+            sprite = this.transform.GetChild(0).GetComponent<SpriteRenderer>();
+        }
 
         void Update()
         {

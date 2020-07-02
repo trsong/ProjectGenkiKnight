@@ -28,7 +28,10 @@ namespace Genki.Control
                 var enemyWeapon = other.gameObject.GetComponent<WeaponSystem>();
                 healthSystem.TakeDamage(enemyWeapon.meleeDamage);
             }
-            
+        }
+        
+        protected void OnTriggerEnter2D(Collider2D other)
+        {
             if (other.transform.CompareTag("Bullet"))
             {
                 IUnitControl shooter = other.gameObject.GetComponent<BulletCollision>().owner;

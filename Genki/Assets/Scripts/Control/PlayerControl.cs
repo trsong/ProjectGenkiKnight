@@ -16,6 +16,9 @@ namespace Genki.Control
             base.Start();
             joyStick = FindObjectOfType<Joystick>();
             joyButton = FindObjectOfType<JoyButton>();
+            
+            GameObject healthBar = GameObject.FindWithTag("PlayerHealthBar");
+            healthSystem.healthBar = healthBar.GetComponent<HealthBarControl>();
         }
 
         void Update()
@@ -32,7 +35,12 @@ namespace Genki.Control
         }
 
         void shoot(){
-            // if(Input.GetButtonDown("Fire1") || joyButton.pressed){
+            // TODO: Remove fire button shoot after build
+            if (Input.GetButtonDown("Fire1") || joyButton.pressed)
+            {
+                weaponSystem.shoot(firePoint);
+            }
+
             if(joyButton.pressed){
                 joyButton.SetUnPressed();
                 weaponSystem.shoot(firePoint);

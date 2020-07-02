@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 355494749}
   m_Layer: 5
   m_Name: HealthBar
-  m_TagString: Untagged
+  m_TagString: PlayerHealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -970,6 +970,12 @@ PrefabInstance:
       propertyPath: attackRange
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1411188378403076596, guid: bb863d964d955c340944756c36e3991b,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 4775345068356378801, guid: 0e2e7e0b42e854e7fa765500fbefac59,
+        type: 3}
     - target: {fileID: 6891378000771189160, guid: bb863d964d955c340944756c36e3991b,
         type: 3}
       propertyPath: m_Name
@@ -1108,6 +1114,16 @@ PrefabInstance:
     - target: {fileID: 7405594832364909648, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891691061001226024, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891691061001226024, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: canSelfRegen
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8891691061001226025, guid: 58e6d0c6e7a4df04e8fec808bf743247,
@@ -1528,8 +1544,6 @@ MonoBehaviour:
   canAttack: 1
   canInteract: 0
   speed: 1
-  rigidbody: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!114 &8744333315369292217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1542,7 +1556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd919ec45efa4cde8670ec5a68d21a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 4775345068356378801, guid: 5a16418dc78f1ec4da909949d33025ef, type: 3}
+  weapon: {fileID: 4775345068356378801, guid: 0e2e7e0b42e854e7fa765500fbefac59, type: 3}
   baseDamage: 10
   criticalHitChance: 0.1
   criticalHitMultiplier: 2

@@ -7,8 +7,8 @@ namespace Genki.Control
     public class PlayerWeaponMovementControl : MonoBehaviour
     {
         Vector2 mousePos;
-        public Camera camera;
         private SpriteRenderer sprite;
+        public Camera camera;
         void Start()
         {
             sprite = this.transform.GetChild(0).GetComponent<SpriteRenderer>();

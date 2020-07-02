@@ -153,6 +153,8 @@ MonoBehaviour:
   speed: 1
   minRange: 1
   maxRange: 5
+  attackRange: 0
+  bullet: {fileID: 0}
 --- !u!95 &8139167287956885845
 Animator:
   serializedVersion: 3

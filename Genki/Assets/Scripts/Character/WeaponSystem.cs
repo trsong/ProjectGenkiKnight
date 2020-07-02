@@ -53,5 +53,14 @@ namespace Genki.Character
         {
             currentWeaponConfig.GenerateBullet(firePoint, owner);
         }
+
+        public void shootTarget(Transform target)
+        {
+            Vector2 direction = target.position - transform.position;
+            Vector2 offset = direction.normalized;  // Avoid bullet bumps into shooter
+            Transform me = gameObject.transform;
+            Vector2 position = me.position;
+            currentWeaponConfig.GenerateBullet(owner,  position + offset, Quaternion.identity, direction);
+        }
     }
 }

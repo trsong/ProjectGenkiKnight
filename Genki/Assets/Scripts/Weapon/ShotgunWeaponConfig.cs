@@ -7,23 +7,18 @@ namespace Genki.Weapon
     {
         public override void GenerateBullet(Transform firePoint, IUnitControl owner)
         {
-            GameObject a = Instantiate(gameObject, firePoint.position, firePoint.rotation);
-            GameObject b = Instantiate(gameObject, firePoint.position, firePoint.rotation);
-            GameObject c = Instantiate(gameObject, firePoint.position, firePoint.rotation);
-            BulletCollision abc = a.GetComponent<BulletCollision>();
-            abc.owner = owner;
-            Rigidbody2D arb = a.GetComponent<Rigidbody2D>();
-            arb.AddForce(-firePoint.up * bulletForce + firePoint.right*2f, ForceMode2D.Impulse);
+            var up = firePoint.up;
+            var right = firePoint.right;
+            var rotation = firePoint.rotation;
+            var position = firePoint.position;
 
-            BulletCollision bbc = b.GetComponent<BulletCollision>();
-            bbc.owner = owner;
-            Rigidbody2D brb = b.GetComponent<Rigidbody2D>();
-            brb.AddForce(-firePoint.up * bulletForce, ForceMode2D.Impulse);
+            var direction1 = -up * bulletForce + right*2f;
+            var direction2 = -up * bulletForce;
+            var direction3 = -up * bulletForce - right*2f;
 
-            BulletCollision cbc = c.GetComponent<BulletCollision>();
-            cbc.owner = owner;
-            Rigidbody2D crb = c.GetComponent<Rigidbody2D>();
-            crb.AddForce(-firePoint.up * bulletForce - firePoint.right*2f, ForceMode2D.Impulse);
+            GenerateBullet(owner, position, rotation, direction1);
+            GenerateBullet(owner, position, rotation, direction2);
+            GenerateBullet(owner, position, rotation, direction3);
         }
     }
 }

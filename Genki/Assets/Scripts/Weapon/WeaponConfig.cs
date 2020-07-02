@@ -15,5 +15,14 @@ namespace Genki.Weapon
         {
             throw new NotImplementedException("Please Use derived WeaponConfig");
         }
+        
+        public virtual void GenerateBullet(IUnitControl owner, Vector2 position, Quaternion rotation, Vector2 direction)
+        {
+            GameObject b = Instantiate(gameObject, position, rotation);
+            BulletCollision bc = b.GetComponent<BulletCollision>();
+            bc.owner = owner;
+            Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
+            rb.AddForce(direction, ForceMode2D.Impulse);
+        }
     }
 }

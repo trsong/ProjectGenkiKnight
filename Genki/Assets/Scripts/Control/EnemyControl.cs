@@ -13,6 +13,17 @@ namespace Genki.Control
         public GameObject attackTarget = null;
 
         private int Timer = 0;
+        
+        protected override void Start()
+        {
+            base.Start();
+            if (!attackTarget)
+            {
+                attackTarget = GameObject.FindWithTag("Player");
+            }
+        }
+        
+        
         void Update()
         {
             Timer++;
@@ -42,9 +53,7 @@ namespace Genki.Control
             a.SetBool("isAttacking", false);
             a.SetBool("isMoving", true);
             Vector2 movePos = Correction((attackTarget.transform.position.x - transform.position.x), (attackTarget.transform.position.y - transform.position.y));
-            a.SetFloat("moveX", movePos.x);
-            a.SetFloat("moveY", movePos.y);
-            transform.position = Vector3.MoveTowards(transform.position, attackTarget.transform.position, characterSystem.speed * Time.deltaTime);
+            characterSystem.moveCharacter(movePos);
         }
 
         public void goBack()
@@ -52,9 +61,7 @@ namespace Genki.Control
             a.SetBool("isAttacking", false);
             a.SetBool("isMoving", true);
             Vector2 movePos = Correction((enemyPos.position.x - transform.position.x), (enemyPos.position.y - transform.position.y));
-            a.SetFloat("moveX", movePos.x);
-            a.SetFloat("moveY", movePos.y);
-            transform.position = Vector3.MoveTowards(transform.position, enemyPos.position, characterSystem.speed * Time.deltaTime);
+            characterSystem.moveCharacter(movePos);
             if (Vector3.Distance(enemyPos.position, transform.position) == 0)
             {
                 a.SetBool("isMoving", false);
@@ -65,10 +72,8 @@ namespace Genki.Control
             a.SetBool("isMoving", false);
             a.SetBool("isAttacking", true);
             Vector2 movePos = Correction((attackTarget.transform.position.x - transform.position.x), (attackTarget.transform.position.y - transform.position.y));
-            a.SetFloat("moveX", movePos.x);
-            a.SetFloat("moveY", movePos.y);
-            GameObject bullet = GetComponent<WeaponSystem>().weapon;
-            GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
+            characterSystem.moveCharacter(movePos);
+            weaponSystem.shootTarget(attackTarget.transform);
         }
         public Vector2 Correction(float x, float y)
         {

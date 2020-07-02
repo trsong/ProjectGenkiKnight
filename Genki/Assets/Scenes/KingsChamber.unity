@@ -541,7 +541,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 355494748}
-  - component: {fileID: 355494749}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -571,18 +570,6 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -30}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &355494749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355494747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a6f8c8d16ce5f40beda0ba88c10888, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &474369197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891691061001226024, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: healthBar
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58e6d0c6e7a4df04e8fec808bf743247, type: 3}
@@ -1695,7 +1687,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd59c95ed568402088559efde79104a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a: {fileID: 0}
   enemyPos: {fileID: 0}
   minRange: 0
   maxRange: 10
+  attackRange: 0
   attackTarget: {fileID: 0}

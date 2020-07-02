@@ -17,7 +17,7 @@ namespace Genki.Control
         protected override void Start()
         {
             base.Start();
-            if (!attackTarget)
+            if (attackTarget == null)
             {
                 attackTarget = GameObject.FindWithTag("Player");
             }

@@ -7,6 +7,7 @@ namespace Genki.Character
     public class WeaponSystem: MonoBehaviour
     {
         public GameObject weapon;
+        public GameObject damagePopup = null;
         
         public float baseDamage = 10f;
         public float criticalHitChance = 0.1f;
@@ -15,6 +16,7 @@ namespace Genki.Character
 
         private IUnitControl owner = null;
         private WeaponConfig currentWeaponConfig;
+        private DamagePopupControl damagePopupControl = null;
 
         private bool readyToAttack = true;
         private int timer = 0;
@@ -26,6 +28,10 @@ namespace Genki.Character
         {
             owner = GetComponent<BaseUnitControl>();
             currentWeaponConfig = weapon.GetComponent<WeaponConfig>();
+            if (damagePopup != null)
+            {
+                damagePopupControl = damagePopup.GetComponent<DamagePopupControl>();
+            }
         }
 
         // Update is called once per frame
@@ -45,18 +51,16 @@ namespace Genki.Character
             currentWeaponConfig = updateWeapon.GetComponent<WeaponConfig>();
         }
 
-        public float CalculateDamage()
+        public float CalculateDamage(IUnitControl target)
         {
             bool isCriticalHit = UnityEngine.Random.Range(0f, 1f) <= criticalHitChance;
             float damageBeforeCritical = baseDamage + currentWeaponConfig.weaponDamage;
-            if (isCriticalHit)
+            float dmg = isCriticalHit ? damageBeforeCritical * criticalHitMultiplier : damageBeforeCritical;
+            if (damagePopupControl != null)
             {
-                return damageBeforeCritical * criticalHitMultiplier;
+                damagePopupControl.ShowDamage(target.getStartPosition(), (int) dmg, isCriticalHit);
             }
-            else
-            {
-                return damageBeforeCritical;
-            }
+            return dmg;
         }
 
         public void shoot(Transform firePoint)

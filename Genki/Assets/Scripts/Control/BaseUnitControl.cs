@@ -40,7 +40,7 @@ namespace Genki.Control
             {
                 IUnitControl shooter = other.gameObject.GetComponent<BulletCollision>().getOwner();
                 var enemyWeapon = shooter.getWeaponSystem();
-                var damage = enemyWeapon.CalculateDamage();
+                var damage = enemyWeapon.CalculateDamage(this);
                 healthSystem.TakeDamage(damage);
             }
         }

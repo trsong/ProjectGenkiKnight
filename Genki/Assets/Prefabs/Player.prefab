@@ -256,7 +256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9e2aa72619c4b11bfe1cdf21ec468c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 0
   canAttack: 1
   canInteract: 0
   speed: 4
@@ -298,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 6199990765139538479, guid: fa8441fa48295954e85f07658ce49470, type: 3}
+  damagePopup: {fileID: 0}
   baseDamage: 10
   criticalHitChance: 0.1
   criticalHitMultiplier: 2

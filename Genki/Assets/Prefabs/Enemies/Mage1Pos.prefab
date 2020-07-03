@@ -182,6 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 4775345068356378801, guid: 0e2e7e0b42e854e7fa765500fbefac59, type: 3}
+  damagePopup: {fileID: 2482577687471222703, guid: d5cbb6859cac94e41a282a83df2e600c,
+    type: 3}
   baseDamage: 15
   criticalHitChance: 0.3
   criticalHitMultiplier: 2

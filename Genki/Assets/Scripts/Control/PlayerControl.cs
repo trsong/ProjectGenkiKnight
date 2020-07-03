@@ -49,10 +49,6 @@ namespace Genki.Control
                 
             }
 
-            if(joyButton.pressed){
-                joyButton.SetUnPressed();
-                weaponSystem.shoot(firePoint);
-            }
         }
         
         void BindKeyForAbility()

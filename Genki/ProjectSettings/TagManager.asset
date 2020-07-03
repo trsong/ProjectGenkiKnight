@@ -8,6 +8,8 @@ TagManager:
   - scene
   - Bullet
   - PlayerHealthBar
+  - enemyBullet
+  - searcher
   layers:
   - Default
   - TransparentFX

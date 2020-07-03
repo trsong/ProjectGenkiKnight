@@ -11,6 +11,8 @@ namespace Genki.Control
         protected Joystick joyStick;
         protected JoyButton joyButton;
 
+        private bool isShootingPressed = false;
+
         protected override void Start()
         {
             base.Start();
@@ -36,9 +38,15 @@ namespace Genki.Control
 
         void shoot(){
             // TODO: Remove fire button shoot after build
-            if (Input.GetButtonDown("Fire1") || joyButton.pressed)
+            if (Input.GetButtonDown("Fire2"))
+            {
+                isShootingPressed = !isShootingPressed;
+            }
+
+            if (isShootingPressed || Input.GetButtonDown("Fire1") || joyButton.pressed)
             {
                 weaponSystem.shoot(firePoint);
+                
             }
 
             if(joyButton.pressed){

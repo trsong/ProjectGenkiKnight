@@ -1,4 +1,5 @@
-﻿using Genki.Control;
+﻿using System;
+using Genki.Control;
 using UnityEngine;
 using Genki.Character;
 
@@ -6,11 +7,29 @@ namespace Genki.Weapon
 {
     public class BulletCollision : MonoBehaviour
     {
-        public IUnitControl owner = null;
+        private Vector2 startPosition = Vector2.zero ;
+        private float maxDistance = 0f;
+        private IUnitControl owner = null;
 
         public void setOwner(IUnitControl newOwner)
         {
             owner = newOwner;
+            var weapon = newOwner.getWeaponSystem().weapon;
+            maxDistance = weapon.GetComponent<WeaponConfig>().maxAttackRange;
+            startPosition = newOwner.getStartPosition();
+        }
+
+        public IUnitControl getOwner()
+        {
+            return owner;
+        }
+
+        void Update()
+        {
+            if (startPosition != Vector2.zero && Vector2.Distance(startPosition, gameObject.transform.position) > maxDistance)
+            {
+                Destroy(gameObject);
+            }
         }
 
         // Start is called before the first frame update

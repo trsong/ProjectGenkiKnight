@@ -34,7 +34,7 @@ namespace Genki.Control
         {
             if (other.transform.CompareTag("Bullet"))
             {
-                IUnitControl shooter = other.gameObject.GetComponent<BulletCollision>().owner;
+                IUnitControl shooter = other.gameObject.GetComponent<BulletCollision>().getOwner();
                 var enemyWeapon = shooter.getWeaponSystem();
                 var damage = enemyWeapon.CalculateDamage();
                 healthSystem.TakeDamage(damage);
@@ -49,6 +49,11 @@ namespace Genki.Control
         public WeaponSystem getWeaponSystem()
         {
             return weaponSystem;
+        }
+
+        public Vector2 getStartPosition()
+        {
+            return transform.position;
         }
     }
 }

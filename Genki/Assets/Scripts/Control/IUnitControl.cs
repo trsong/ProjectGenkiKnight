@@ -1,5 +1,6 @@
 using Genki.Abilitiy;
 using Genki.Character;
+using UnityEngine;
 
 namespace Genki.Control
 {
@@ -7,5 +8,7 @@ namespace Genki.Control
     {
         CharacterSystem getCharacterSystem();
         WeaponSystem getWeaponSystem();
+
+        Vector2 getStartPosition();
     }
 }

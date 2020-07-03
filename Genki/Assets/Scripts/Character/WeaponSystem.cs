@@ -15,7 +15,12 @@ namespace Genki.Character
 
         private IUnitControl owner = null;
         private WeaponConfig currentWeaponConfig;
-        
+
+        private bool readyToAttack = true;
+        private int timer = 0;
+
+        private int MaxTimer => (int)(currentWeaponConfig.timeToWaitBetweenHits * 60);
+
         // Use this for initialization
         void Start()
         {
@@ -26,7 +31,12 @@ namespace Genki.Character
         // Update is called once per frame
         void Update()
         {
-
+            timer++;
+            if (timer > MaxTimer)
+            {
+                readyToAttack = true;
+                timer = 0;
+            }
         }
 
         public void EquipWeapon(GameObject updateWeapon)
@@ -51,16 +61,25 @@ namespace Genki.Character
 
         public void shoot(Transform firePoint)
         {
-            currentWeaponConfig.GenerateBullet(firePoint, owner);
+            if (readyToAttack)
+            {
+                currentWeaponConfig.GenerateBullet(firePoint, owner);
+                readyToAttack = false;
+            }
         }
 
         public void shootTarget(Transform target)
         {
-            Vector2 direction = target.position - transform.position;
-            Vector2 offset = direction.normalized;  // Avoid bullet bumps into shooter
-            Transform me = gameObject.transform;
-            Vector2 position = me.position;
-            currentWeaponConfig.GenerateBullet(owner,  position + offset, Quaternion.identity, direction);
+            if (readyToAttack)
+            {
+                Vector2 direction = target.position - transform.position;
+                Vector2 offset = direction.normalized; // Avoid bullet bumps into shooter
+                Transform me = gameObject.transform;
+                Vector2 position = me.position;
+                currentWeaponConfig.GenerateBullet(owner,  position + offset, Quaternion.identity, direction);
+
+                readyToAttack = false;
+            }
         }
     }
 }

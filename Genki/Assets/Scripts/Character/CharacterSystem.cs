@@ -6,11 +6,8 @@ using UnityEngine;
 
 namespace Genki.Character
 {
-    public enum EnemyType { Player, NPC, Skeleton, Archer, Boss, Elite };
-
     public class CharacterSystem : MonoBehaviour
     {
-        public EnemyType enemyType = EnemyType.Player;
         public bool canAttack = true;
         public bool canInteract = false;
         
@@ -39,7 +36,7 @@ namespace Genki.Character
 
         public bool isEnemy()
         {
-            return enemyType != EnemyType.Player & enemyType != EnemyType.NPC;
+            return transform.CompareTag("Enemy");
         }
 
         public void moveCharacter(float x, float y)

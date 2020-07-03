@@ -8,7 +8,7 @@ namespace Genki.Abilitiy
         public override bool canApply(GameObject target)
         {
             var targetChar = target.GetComponent<CharacterSystem>();
-            return targetChar.enemyType == EnemyType.Player;
+            return false;
         }
 
         public override void apply(GameObject target)

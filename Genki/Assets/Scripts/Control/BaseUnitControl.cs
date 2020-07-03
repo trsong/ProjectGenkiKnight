@@ -23,8 +23,9 @@ namespace Genki.Control
         protected void OnCollisionEnter2D(Collision2D other)
         {
             if (!characterSystem.canAttack) return;
-            
-            if(!characterSystem.isEnemy() && other.transform.CompareTag("Enemy")){
+            var isOtherEnemy = other.transform.CompareTag("Enemy");
+            var isMeEnemy = characterSystem.isEnemy();
+            if(isMeEnemy != isOtherEnemy){
                 var enemyWeapon = other.gameObject.GetComponent<WeaponSystem>();
                 healthSystem.TakeDamage(enemyWeapon.meleeDamage);
             }

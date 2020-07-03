@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d0412b21a734ca0814d7deed5087a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAttackRange: 3
+  maxAttackRange: 6
   weaponDamage: 20
   timeToWaitBetweenHits: 1
   bulletForce: 7

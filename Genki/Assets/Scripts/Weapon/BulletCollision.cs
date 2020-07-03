@@ -10,6 +10,7 @@ namespace Genki.Weapon
         private Vector2 startPosition = Vector2.zero ;
         private float maxDistance = 0f;
         private IUnitControl owner = null;
+        private bool canBreakTrough = false;
 
         public void setOwner(IUnitControl newOwner)
         {
@@ -17,6 +18,7 @@ namespace Genki.Weapon
             var weapon = newOwner.getWeaponSystem().weapon;
             maxDistance = weapon.GetComponent<WeaponConfig>().maxAttackRange;
             startPosition = newOwner.getStartPosition();
+            canBreakTrough = weapon.GetComponent<WeaponConfig>().canBreakTrough();
         }
 
         public IUnitControl getOwner()
@@ -39,6 +41,11 @@ namespace Genki.Weapon
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (canBreakTrough)
+            {
+                return;
+            }
+            
             if (other.tag != "Bullet" && other.tag != "searcher")
             {
                 Destroy(gameObject);

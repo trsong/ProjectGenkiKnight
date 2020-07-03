@@ -96,7 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 7405594831901922573}
-  sprite: {fileID: 7405594832364909654}
 --- !u!1 &7405594830586783090
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +115,7 @@ GameObject:
   - component: {fileID: 8891691061001226025}
   - component: {fileID: 8891691061001226024}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,9 +259,7 @@ MonoBehaviour:
   enemyType: 0
   canAttack: 1
   canInteract: 0
-  speed: 5
-  rigidbody: {fileID: 7405594830586783094}
-  animator: {fileID: 7405594830586783091}
+  speed: 4
 --- !u!114 &8891691061001226027
 MonoBehaviour:
   m_ObjectHideFlags: 0

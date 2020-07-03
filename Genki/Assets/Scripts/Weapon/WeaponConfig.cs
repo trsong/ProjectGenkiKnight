@@ -24,5 +24,10 @@ namespace Genki.Weapon
             Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
             rb.AddForce(direction, ForceMode2D.Impulse);
         }
+
+        public virtual bool canBreakTrough()
+        {
+            return false;
+        }
     }
 }

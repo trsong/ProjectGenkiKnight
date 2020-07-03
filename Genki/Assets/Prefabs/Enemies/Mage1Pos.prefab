@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 4775345068356378801, guid: 0e2e7e0b42e854e7fa765500fbefac59, type: 3}
-  baseDamage: 10
-  criticalHitChance: 0.1
+  baseDamage: 15
+  criticalHitChance: 0.3
   criticalHitMultiplier: 2
-  meleeDamage: 20
+  meleeDamage: 0
 --- !u!114 &8357156571871333694
 MonoBehaviour:
   m_ObjectHideFlags: 0

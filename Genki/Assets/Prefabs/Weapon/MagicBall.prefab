@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1813539239128802148}
   - component: {fileID: 90259967288178601}
   - component: {fileID: 6553559902754070961}
-  - component: {fileID: 888909403531384987}
+  - component: {fileID: 2487885643454535253}
   m_Layer: 0
   m_Name: MagicBall
   m_TagString: Bullet
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9969037502aab44a3681b0ff862581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &888909403531384987
+--- !u!114 &2487885643454535253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,10 +143,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4775345068356378801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d0412b21a734ca0814d7deed5087a3f, type: 3}
+  m_Script: {fileID: 11500000, guid: 070819d214bc4cef97cd9ccc2f56b734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAttackRange: 2
-  weaponDamage: 5
+  maxAttackRange: 6
+  weaponDamage: 10
   timeToWaitBetweenHits: 2.5
-  bulletForce: 5
+  bulletForce: 20
+  speed: 8

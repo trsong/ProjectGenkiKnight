@@ -6,7 +6,12 @@ namespace Genki.Weapon
     public class MagicWeaponConfig: WeaponConfig
     {
         public float speed = 10f;
-        
+
+        public override bool canBreakTrough()
+        {
+            return true;
+        }
+
         public override void GenerateBullet(IUnitControl owner, Vector2 position, Quaternion rotation, Vector2 direction)
         {
             GameObject b = Instantiate(gameObject, position, rotation);

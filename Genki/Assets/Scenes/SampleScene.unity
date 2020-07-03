@@ -639,6 +639,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fe67c6a853ccee46a44b364a80abf1b, type: 3}
+--- !u!20 &854040587 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7405594831901922573, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+    type: 3}
+  m_PrefabInstance: {fileID: 1564307091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &913816106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1116,6 +1122,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8891691059820508547, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 854040587}
     - target: {fileID: 8891691061001226024, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
       propertyPath: healthBar

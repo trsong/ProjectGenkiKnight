@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd919ec45efa4cde8670ec5a68d21a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 4775345068356378801, guid: 5a16418dc78f1ec4da909949d33025ef, type: 3}
+  weapon: {fileID: 4775345068356378801, guid: 0e2e7e0b42e854e7fa765500fbefac59, type: 3}
   baseDamage: 10
   criticalHitChance: 0.1
   criticalHitMultiplier: 2
@@ -171,8 +171,6 @@ MonoBehaviour:
   canAttack: 1
   canInteract: 0
   speed: 1
-  rigidbody: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!114 &1411188378403076598
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,6 +28,10 @@ namespace Genki.Control
         {
             Timer++;
             a = GetComponent<Animator>();
+            if (attackTarget == null)
+            {
+                attackTarget = GameObject.FindWithTag("Player");
+            }
             if (Vector3.Distance(attackTarget.transform.position, transform.position) <= maxRange && Vector3.Distance(attackTarget.transform.position, transform.position) >= minRange)
             {
                 if (Vector3.Distance(attackTarget.transform.position, transform.position) <= attackRange)

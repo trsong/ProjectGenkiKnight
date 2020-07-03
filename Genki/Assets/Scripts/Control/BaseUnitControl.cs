@@ -24,6 +24,9 @@ namespace Genki.Control
         {
             if (!characterSystem.canAttack) return;
             var isOtherEnemy = other.transform.CompareTag("Enemy");
+            var isOtherPlayer = other.transform.CompareTag("Player");
+            if (!isOtherEnemy && !isOtherPlayer) return;
+            
             var isMeEnemy = characterSystem.isEnemy();
             if(isMeEnemy != isOtherEnemy){
                 var enemyWeapon = other.gameObject.GetComponent<WeaponSystem>();

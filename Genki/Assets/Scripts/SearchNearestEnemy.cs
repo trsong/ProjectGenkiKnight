@@ -45,7 +45,10 @@ public class SearchNearestEnemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        nearEnemies.Remove(collision.gameObject);
+        if (collision.CompareTag("Enemy"))
+        {
+            nearEnemies.Remove(collision.gameObject);
+        }
     }
     public GameObject getNearestEnemy()
     {

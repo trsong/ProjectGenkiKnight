@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281ea3b44bf846958c0b413ea8d2c749, type: 3}
   m_Name: Heal50
   m_EditorClassIdentifier: 
-  description: HEAL
+  description: HP(M)
   icon: {fileID: 21300000, guid: 3e260c37522cdbf48b91cc39d62d59d5, type: 3}
-  maxQuantity: 3
+  maxQuantity: 99
   uiIconPrefab: {fileID: 1725495650898500, guid: 9ae09d1bbaebea64788a1d018f36a739,
     type: 3}
   maxCooldownInSec: 30

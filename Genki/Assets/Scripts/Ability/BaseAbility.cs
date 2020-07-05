@@ -89,5 +89,9 @@ namespace Genki.Abilitiy
             return quantity;
         }
 
+        public void delete()
+        {
+            quantity = 0;
+        }
     }
 }

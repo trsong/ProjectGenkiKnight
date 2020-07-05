@@ -5,10 +5,12 @@ using UnityEngine;
 public class DoorKeyManagement : MonoBehaviour
 {
     public static DoorKeyManagement current;
+    private int nextID;
 
     public void Awake()
     {
         current = this;
+        nextID = 0;
     }
 
     private Dictionary<int, int> ownKeys = new Dictionary<int, int>();
@@ -28,5 +30,10 @@ public class DoorKeyManagement : MonoBehaviour
     public void useKey(int key)
     {
         ownKeys[key]--;
+    }
+
+    public int getNextID()
+    {
+        return nextID++;
     }
 }

@@ -10,6 +10,7 @@ TagManager:
   - PlayerHealthBar
   - enemyBullet
   - searcher
+  - AbilityBar
   layers:
   - Default
   - TransparentFX

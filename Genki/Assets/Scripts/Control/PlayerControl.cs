@@ -21,6 +21,7 @@ namespace Genki.Control
             
             GameObject healthBar = GameObject.FindWithTag("PlayerHealthBar");
             healthSystem.healthBar = healthBar.GetComponent<HealthBarControl>();
+            abilitySystem.bindKeyToAbility();
         }
 
         void Update()
@@ -46,14 +47,8 @@ namespace Genki.Control
             if (isShootingPressed || Input.GetButtonDown("Fire1") || joyButton.pressed)
             {
                 weaponSystem.shoot(firePoint);
-                
             }
 
-        }
-        
-        void BindKeyForAbility()
-        {
-            abilitySystem.bindKeyToAbility();
         }
     }
 }

@@ -19,5 +19,10 @@ namespace Genki.Abilitiy
                 // weaponSystem.AttackTarget(target);
             }
         }
+
+        protected override void activate(GameObject target)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

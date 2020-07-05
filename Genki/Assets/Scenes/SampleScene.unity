@@ -1232,6 +1232,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2482577687471222703, guid: d5cbb6859cac94e41a282a83df2e600c,
         type: 3}
+    - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: abilities.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: abilities.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ba44471329a7b4d62b437c1960236bfa,
+        type: 2}
     - target: {fileID: 8891691061001226027, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
       propertyPath: joyStick

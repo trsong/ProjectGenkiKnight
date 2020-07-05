@@ -80,7 +80,6 @@ namespace Genki.Character
             transform.position = Vector3.MoveTowards(transform.position, enemyPos.transform.position, speed * Time.deltaTime);
             if (Vector3.Distance(enemyPos.position, transform.position) == 0)
             {
-                Debug.Log("1");
                 a.SetBool("isMoving", false);
             }
         }

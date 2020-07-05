@@ -61,6 +61,11 @@ namespace Genki.Character
             currentHealthPoint = Mathf.Clamp(currentHealthPoint + healAmount, 0f, maxHealthPoint);
         }
 
+        public bool CanHeal()
+        {
+            return (maxHealthPoint - currentHealthPoint) > 1f;
+        }
+
         IEnumerator KillCharacter()
         {
             Destroy(gameObject);

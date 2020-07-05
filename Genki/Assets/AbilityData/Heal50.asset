@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281ea3b44bf846958c0b413ea8d2c749, type: 3}
+  m_Name: Heal50
+  m_EditorClassIdentifier: 
+  description: HEAL
+  icon: {fileID: 21300000, guid: 3e260c37522cdbf48b91cc39d62d59d5, type: 3}
+  maxQuantity: 3
+  uiIconPrefab: {fileID: 1725495650898500, guid: 9ae09d1bbaebea64788a1d018f36a739,
+    type: 3}
+  maxCooldownInSec: 30
+  healAmount: 50

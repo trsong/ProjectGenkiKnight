@@ -3,20 +3,28 @@ using UnityEngine;
 
 namespace Genki.Abilitiy
 {
+    [CreateAssetMenu(fileName = "New HealAbilityData", menuName = "Heal Ability")]
     public class HealAbility: Ability
     {
+        public float healAmount = 50f; 
+        
         public override bool canApply(GameObject target)
         {
-            var targetChar = target.GetComponent<CharacterSystem>();
+            if (!canStartTimer()) return false;
+            
+            if (owner != null)
+            {
+                var healthSystem = owner.GetComponent<HealthSystem>();
+                return healthSystem.CanHeal();
+            }
             return false;
         }
 
-        public override void apply(GameObject target)
+        protected override void activate(GameObject target)
         {
             if (owner != null)
             {
                 var healthSystem = owner.GetComponent<HealthSystem>();
-                var healAmount = 10f;
                 healthSystem.Heal(healAmount);
             }
         }

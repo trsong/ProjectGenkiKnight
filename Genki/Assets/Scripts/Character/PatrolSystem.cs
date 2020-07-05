@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace Genki.Character
 {
-    public class EnemySyetem : CharacterSystem
+    public class PatrolSystem : CharacterSystem
     {
         public Animator a;
         public Transform enemyPos;
@@ -13,9 +12,13 @@ namespace Genki.Character
         public int maxRange;
         public int attackRange;
         public GameObject attackTarget = null;
+        public float offset;
+        public bool xORy = true;
+        public bool patrol_mode = true;
         protected WeaponSystem weaponSystem;
 
         private int Timer = 0;
+        Vector3 endPos;
 
         void Start()
         {
@@ -23,6 +26,18 @@ namespace Genki.Character
             if (attackTarget == null)
             {
                 attackTarget = GameObject.FindWithTag("Player");
+            }
+            if (xORy)
+            {
+                endPos.x = enemyPos.transform.position.x + offset;
+                endPos.y = enemyPos.transform.position.y;
+                endPos.z = enemyPos.position.z;
+            }
+            else
+            {
+                endPos.x = enemyPos.transform.position.x;
+                endPos.y = enemyPos.transform.position.y + offset;
+                endPos.z = enemyPos.transform.position.z;
             }
         }
 
@@ -37,6 +52,7 @@ namespace Genki.Character
             }
             if (Vector3.Distance(attackTarget.transform.position, transform.position) <= maxRange && Vector3.Distance(attackTarget.transform.position, transform.position) >= minRange)
             {
+                patrol_mode = false;
                 if (Vector3.Distance(attackTarget.transform.position, transform.position) <= attackRange)
                 {
                     if (Timer % 150 == 0)
@@ -60,6 +76,39 @@ namespace Genki.Character
             //null
         }
 
+        public void Patrol()
+        {
+            if(Vector3.Distance(transform.position, enemyPos.transform.position) == 0)
+            {
+                a.SetBool("isAttacking", false);
+                a.SetBool("isMoving", true);
+                Vector2 movePos = Correction((endPos.x - transform.position.x), (endPos.y - transform.position.y));
+                a.SetFloat("moveX", movePos.x);
+                a.SetFloat("moveY", movePos.y);
+                transform.position = Vector3.MoveTowards(transform.position, endPos, speed * Time.deltaTime);
+            }else if(Vector3.Distance(transform.position, endPos) == 0)
+            {
+                
+                a.SetBool("isAttacking", false);
+                a.SetBool("isMoving", true);
+                Vector2 movePos = Correction((enemyPos.transform.position.x - transform.position.x), (enemyPos.transform.position.y - transform.position.y));
+                a.SetFloat("moveX", movePos.x);
+                a.SetFloat("moveY", movePos.y);
+                transform.position = Vector3.MoveTowards(transform.position, enemyPos.transform.position, speed * Time.deltaTime);
+            }
+            else
+            {
+                if((a.GetFloat("moveX") == 0 && a.GetFloat("moveY") == -1) || (a.GetFloat("moveX") == -1 && a.GetFloat("moveY") == 0))
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, enemyPos.transform.position, speed * Time.deltaTime);
+                }
+                else
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, endPos, speed * Time.deltaTime);
+                }
+            }
+        }
+
         public void followPlayer()
         {
             a.SetBool("isAttacking", false);
@@ -72,16 +121,26 @@ namespace Genki.Character
 
         public void goBack()
         {
-            a.SetBool("isAttacking", false);
-            a.SetBool("isMoving", true);
-            Vector2 movePos = Correction((enemyPos.transform.position.x - transform.position.x), (enemyPos.transform.position.y - transform.position.y));
-            a.SetFloat("moveX", movePos.x);
-            a.SetFloat("moveY", movePos.y);
-            transform.position = Vector3.MoveTowards(transform.position, enemyPos.transform.position, speed * Time.deltaTime);
-            if (Vector3.Distance(enemyPos.transform.position, transform.position) == 0)
+            if (patrol_mode)
             {
-                a.SetBool("isMoving", false);
+                Patrol();
             }
+            else
+            {
+                a.SetBool("isAttacking", false);
+                a.SetBool("isMoving", true);
+                Vector2 movePos = Correction((enemyPos.transform.position.x - transform.position.x), (enemyPos.transform.position.y - transform.position.y));
+                a.SetFloat("moveX", movePos.x);
+                a.SetFloat("moveY", movePos.y);
+                transform.position = Vector3.MoveTowards(transform.position, enemyPos.transform.position, speed * Time.deltaTime);
+                if (Vector3.Distance(enemyPos.transform.position, transform.position) == 0)
+                {
+                    //Patrol();
+                    a.SetBool("isMoving", false);
+                    patrol_mode = true;
+                }
+            }
+            
         }
         public void attack()
         {
@@ -120,5 +179,4 @@ namespace Genki.Character
         }
     }
 }
-
-
+   

@@ -41,12 +41,12 @@ namespace Genki.Abilitiy
 
         public void attachAbilityToBar(Ability ability)
         {
-            // if (abilities.Count >= abilityBarCapacity)
-            // {
-            //     var removedAbility = abilities[0];
-            //     removedAbility.delete();
-            //     abilities.RemoveAt(0);
-            // }
+            if (abilities.Count >= abilityBarCapacity)
+            {
+                var removedAbility = abilities[0];
+                removedAbility.delete();
+                abilities.RemoveAt(0);
+            }
 
             abilities.Add(ability);
             ability.setOwner(gameObject);

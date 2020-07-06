@@ -1126,8 +1126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72942739405a83d449040af08eb99391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2133963334}
-  chicken: {fileID: 479147627}
+  chaser: {fileID: 2133963334}
+  runner: {fileID: 479147627}
 --- !u!4 &266859483
 Transform:
   m_ObjectHideFlags: 0

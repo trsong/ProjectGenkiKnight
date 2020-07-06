@@ -126,6 +126,7 @@ MonoBehaviour:
   drops:
   - {fileID: 8499934639913634218, guid: bc7908d6ef01f43e78f562ca4a015e19, type: 3}
   - {fileID: 8064166923572643300, guid: d5cf047f3ab7b403aa0fa3942d8b74ce, type: 3}
+  - {fileID: 5976567894177871044, guid: 5584f8ea307781e4a8083253dd848cdf, type: 3}
   openLoot: {fileID: -268765282451105048, guid: c2e1a417eea178c4cb6a19d2ed73ed8b,
     type: 3}
 --- !u!1 &802943130264779914

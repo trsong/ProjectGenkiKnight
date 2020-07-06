@@ -1,106 +1,103 @@
 fileFormatVersion: 2
-guid: 8a9662b554744da4e97ed5bba5353115
+guid: cb2c6dcd19a1c244c9fcc9bd04cebd2d
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: House_0
+    second: water section_0
   - first:
       213: 21300002
-    second: House_1
+    second: water section_1
   - first:
       213: 21300004
-    second: House_2
+    second: water section_2
   - first:
       213: 21300006
-    second: House_3
+    second: water section_3
   - first:
       213: 21300008
-    second: House_4
+    second: water section_4
   - first:
       213: 21300010
-    second: House_5
+    second: water section_5
   - first:
       213: 21300012
-    second: House_6
+    second: water section_6
   - first:
       213: 21300014
-    second: House_7
+    second: water section_7
   - first:
       213: 21300016
-    second: House_8
+    second: water section_8
   - first:
       213: 21300018
-    second: House_9
+    second: water section_9
   - first:
       213: 21300020
-    second: House_10
+    second: water section_10
   - first:
       213: 21300022
-    second: House_11
+    second: water section_11
   - first:
       213: 21300024
-    second: House_12
+    second: water section_12
   - first:
       213: 21300026
-    second: House_13
+    second: water section_13
   - first:
       213: 21300028
-    second: House_14
+    second: water section_14
   - first:
       213: 21300030
-    second: House_15
+    second: water section_15
   - first:
       213: 21300032
-    second: House_16
+    second: water section_16
   - first:
       213: 21300034
-    second: House_17
+    second: water section_17
   - first:
       213: 21300036
-    second: House_18
+    second: water section_18
   - first:
       213: 21300038
-    second: House_19
+    second: water section_19
   - first:
       213: 21300040
-    second: House_20
+    second: water section_20
   - first:
       213: 21300042
-    second: House_21
+    second: water section_21
   - first:
       213: 21300044
-    second: House_22
+    second: water section_22
   - first:
       213: 21300046
-    second: House_23
+    second: water section_23
   - first:
       213: 21300048
-    second: House_24
+    second: water section_24
   - first:
       213: 21300050
-    second: House_25
+    second: water section_25
   - first:
       213: 21300052
-    second: House_26
+    second: water section_26
   - first:
       213: 21300054
-    second: House_27
+    second: water section_27
   - first:
       213: 21300056
-    second: House_28
+    second: water section_28
   - first:
       213: 21300058
-    second: House_29
+    second: water section_29
   - first:
       213: 21300060
-    second: House_30
+    second: water section_30
   - first:
       213: 21300062
-    second: House_31
-  - first:
-      41386430: 2186277476908879412
-    second: ImportLogs
+    second: water section_31
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -145,7 +142,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
-  spriteBorder: {x: 8, y: 56, z: 8, w: 46}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -159,8 +156,8 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 512
+    resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
@@ -171,8 +168,8 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 512
+    resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
@@ -183,8 +180,8 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 512
+    resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
@@ -195,8 +192,8 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 512
+    resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
@@ -207,8 +204,8 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
+    maxTextureSize: 512
+    resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
@@ -221,7 +218,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: House_0
+      name: water section_0
       rect:
         serializedVersion: 2
         x: 0
@@ -229,20 +226,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b892c2123b3482b4c865e28fadfb8454
+      spriteID: df0e36b7b2e6928418a6f7c89ad00898
       internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_1
+      name: water section_1
       rect:
         serializedVersion: 2
         x: 64
@@ -250,20 +247,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626af466277de5a4f9d0c24160239293
+      spriteID: 6a6ab4d7db3966647ad48f199076cac5
       internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_2
+      name: water section_2
       rect:
         serializedVersion: 2
         x: 128
@@ -271,20 +268,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c7a643c29704b645be932004569413a
+      spriteID: 617365e3f740b364a9da8af6ab6bba2a
       internalID: 21300004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_3
+      name: water section_3
       rect:
         serializedVersion: 2
         x: 192
@@ -292,20 +289,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd1596de127548044aca36bef180e167
+      spriteID: 0336ffd08c40730489230df0ed5aecd7
       internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_4
+      name: water section_4
       rect:
         serializedVersion: 2
         x: 256
@@ -313,20 +310,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3b5f690e81562b4c81ab00ade8cc83b
+      spriteID: 32fcaefa12982b147b36af9ed067ed8b
       internalID: 21300008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_5
+      name: water section_5
       rect:
         serializedVersion: 2
         x: 320
@@ -334,20 +331,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b58fc8fe45bf1646984b3d32a8c6b90
+      spriteID: c17f74b8d8225f54a8ee81ae70a35076
       internalID: 21300010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_6
+      name: water section_6
       rect:
         serializedVersion: 2
         x: 384
@@ -355,20 +352,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7703c58a52e4bdb479c9f59ae5676266
+      spriteID: 9acfe275066d45242a99aeaab8cdd88d
       internalID: 21300012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_7
+      name: water section_7
       rect:
         serializedVersion: 2
         x: 448
@@ -376,20 +373,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 828d7f351dcf98647ab11b3c821ba91b
+      spriteID: 17b094310d748634888d2f0c01de61e3
       internalID: 21300014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_8
+      name: water section_8
       rect:
         serializedVersion: 2
         x: 0
@@ -397,20 +394,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00339817aee14314fabad254e32f96e8
+      spriteID: 427b4aa86f239e5409cb4b74ec3918f2
       internalID: 21300016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_9
+      name: water section_9
       rect:
         serializedVersion: 2
         x: 64
@@ -418,20 +415,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a7dc5044d86d2b4ea4f960584be124f
+      spriteID: 509b6873ed37ffa4c8ee65dc60687c9d
       internalID: 21300018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_10
+      name: water section_10
       rect:
         serializedVersion: 2
         x: 128
@@ -439,20 +436,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52918cb7c2b3a5644a9ab16a922d4fbe
+      spriteID: 9fc9b3d943664414fa20aa4544b4a813
       internalID: 21300020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_11
+      name: water section_11
       rect:
         serializedVersion: 2
         x: 192
@@ -460,20 +457,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19b2d2de3cf402468986d3a8138e65c
+      spriteID: b4bbab5c9170782489ef2798ac087a7f
       internalID: 21300022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_12
+      name: water section_12
       rect:
         serializedVersion: 2
         x: 256
@@ -481,20 +478,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d09de36b4e1afa4c98b61b77fb2df12
+      spriteID: 8745ee67d504c9d4386a39bc4d2849c2
       internalID: 21300024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_13
+      name: water section_13
       rect:
         serializedVersion: 2
         x: 320
@@ -502,20 +499,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa4ffc9f4ad94c14eaf5ac1cec54e1fe
+      spriteID: fd1c859b1fecce541a1cdd604ca3d371
       internalID: 21300026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_14
+      name: water section_14
       rect:
         serializedVersion: 2
         x: 384
@@ -523,20 +520,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c65e0258bb57b3a45822230ae8ce2f79
+      spriteID: 767c4df83490b3d47830df6fb53e71f7
       internalID: 21300028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_15
+      name: water section_15
       rect:
         serializedVersion: 2
         x: 448
@@ -544,20 +541,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 147d13aa0270cb141824b76575ad5aaf
+      spriteID: 3b089096709baef4292bae32f008fc3e
       internalID: 21300030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_16
+      name: water section_16
       rect:
         serializedVersion: 2
         x: 0
@@ -565,24 +562,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: -32}
-        - {x: -32, y: 32}
-        - {x: -19, y: 32}
-        - {x: -19, y: -32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bba17d5476156064386745be197ebc4a
+      spriteID: 961110aa6126081479dca163db19d7aa
       internalID: 21300032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_17
+      name: water section_17
       rect:
         serializedVersion: 2
         x: 64
@@ -590,20 +583,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81deeb5a67f9c714694bbc809cadd835
+      spriteID: a7108fc1d63e81047a623718bde8db2b
       internalID: 21300034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_18
+      name: water section_18
       rect:
         serializedVersion: 2
         x: 128
@@ -611,20 +604,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a072c4557e289446b76dc8a08e62e1e
+      spriteID: 3051b51018e4b5949a6136c66647a3ef
       internalID: 21300036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_19
+      name: water section_19
       rect:
         serializedVersion: 2
         x: 192
@@ -632,20 +625,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 994ccdf8bbe2a3a41bb3de7bb58d5294
+      spriteID: d5861f9bf87d0ca459af3b0acb75ae9a
       internalID: 21300038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_20
+      name: water section_20
       rect:
         serializedVersion: 2
         x: 256
@@ -653,20 +646,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad5a489f77cfbdb42867de5ad1d208d3
+      spriteID: 9b664baa71fcf204785a6876aa38d433
       internalID: 21300040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_21
+      name: water section_21
       rect:
         serializedVersion: 2
         x: 320
@@ -674,24 +667,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 18, y: -32}
-        - {x: 18, y: 32}
-        - {x: 32, y: 32}
-        - {x: 32, y: -32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25bf1c8b6d842b64480732450c434ead
+      spriteID: bc5db950b1efcef41b55be4dfc3338f3
       internalID: 21300042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_22
+      name: water section_22
       rect:
         serializedVersion: 2
         x: 384
@@ -699,20 +688,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bf274874ddc65e478d85e6f959fe9a0
+      spriteID: d520bd8816750e5448d0c8e8a2bad0b4
       internalID: 21300044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_23
+      name: water section_23
       rect:
         serializedVersion: 2
         x: 448
@@ -720,20 +709,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b03f1bbd1071326409596d174047a3c0
+      spriteID: 97b66b3ddba850741a22270b51b40bc2
       internalID: 21300046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_24
+      name: water section_24
       rect:
         serializedVersion: 2
         x: 0
@@ -741,20 +730,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3ae07b9132fd6d47a2bf76e772a84f2
+      spriteID: cbe95022b4fdf234d9b91ebda83fdf69
       internalID: 21300048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_25
+      name: water section_25
       rect:
         serializedVersion: 2
         x: 64
@@ -762,20 +751,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f224b393ad7bec54f9b230d44c327d35
+      spriteID: 1a76421db5f5a0f4a82ed097e5fea76a
       internalID: 21300050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_26
+      name: water section_26
       rect:
         serializedVersion: 2
         x: 128
@@ -783,20 +772,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0831977a7454111418653f0c49a3a0eb
+      spriteID: 5c3e85428b5a3be4eadf718933223059
       internalID: 21300052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_27
+      name: water section_27
       rect:
         serializedVersion: 2
         x: 192
@@ -804,49 +793,41 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec25503f431ed024497e6307f6f34cff
+      spriteID: 43664f24058028543bfabfd34eb8cfcd
       internalID: 21300054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_28
+      name: water section_28
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: -32}
-        - {x: -32, y: 32}
-        - {x: -20, y: 32}
-        - {x: -20, y: -32}
-      - - {x: 21, y: -32}
-        - {x: 21, y: 32}
-        - {x: 32, y: 32}
-        - {x: 32, y: -32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafa2d7114485524f9fd5bdd8a60d0e9
+      spriteID: 82f58a53c584f3849913d9621a3a339d
       internalID: 21300056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_29
+      name: water section_29
       rect:
         serializedVersion: 2
         x: 320
@@ -854,49 +835,41 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a59def3de0a6332419860a6b05861871
+      spriteID: 5509c968af0eeca4f91219d14cb0c73c
       internalID: 21300058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_30
+      name: water section_30
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: -32}
-        - {x: -32, y: 32}
-        - {x: -21, y: 32}
-        - {x: -21, y: -32}
-      - - {x: 21, y: -32}
-        - {x: 20, y: 32}
-        - {x: 32, y: 32}
-        - {x: 31, y: -32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a30d2bcad72c1af4a8f650faf8e7c100
+      spriteID: 5cdc3ed37fa8e814694d0a89ce8b4b05
       internalID: 21300060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_31
+      name: water section_31
       rect:
         serializedVersion: 2
         x: 448
@@ -904,13 +877,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5e675874a33e3842af4ff44c5cb7865
+      spriteID: 939e8e5e21d91cd42b7251a52d362af7
       internalID: 21300062
       vertices: []
       indices: 
@@ -919,7 +892,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4c6799796fe32bd418ee3d9fabe40ee3
+    spriteID: 9a0eaee24905d0b45a3a86c561998763
     internalID: 0
     vertices: []
     indices: 

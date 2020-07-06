@@ -15,6 +15,8 @@ public class LootDrop : MonoBehaviour
             Color temp = spriteRenderer.color;
             temp.a = 0.5f;
             spriteRenderer.color = temp;
+            int random = Random.Range(0,drops.Count);
+            Instantiate(drops[random]);
         }
     }
 }

@@ -42,7 +42,7 @@ namespace Genki.Weapon
         // Start is called before the first frame update
         void Start()
         {
-            Destroy(gameObject, 2);
+            Destroy(gameObject, 5);
         }
 
         private void OnTriggerEnter2D(Collider2D other)

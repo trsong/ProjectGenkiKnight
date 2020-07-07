@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Genki.Abilitiy
 {
@@ -11,7 +12,9 @@ namespace Genki.Abilitiy
         public GameObject uiIconPrefab = null;
         public float maxCooldownInSec = 1f; // in seconds
         public float maxEffectTimeInSec = 0f; // in seconds
-        
+        public GameObject uiBuffPrefab = null;
+        public GameObject uiDebuffPrefab = null;
+
         protected GameObject owner = null;
 
         private float effectTimeInSec = 0f;
@@ -20,6 +23,36 @@ namespace Genki.Abilitiy
         private bool canActivate = true;
         private int quantity = 0;
         private static int sharedCooldown = 0; // 3 secs common cd
+        
+        private GameObject _statusBar = null;
+        protected GameObject statusBar
+        {
+            get
+            {
+                // Only player can access status bar
+                if (!owner || !owner.transform.CompareTag("Player")) return null;
+                if(_statusBar == null) _statusBar = GameObject.Find("StatusBar");
+                return _statusBar;
+            }
+        }
+
+        public GameObject attachBuff(Sprite icon)
+        {
+            if (!owner || !owner.transform.CompareTag("Player")) return null;
+            if (!statusBar || !uiBuffPrefab) return null;
+            var statusInstance = Instantiate(uiBuffPrefab, statusBar.transform);
+            statusInstance.transform.Find("Icon").GetComponent<Image>().sprite = icon;
+            return statusInstance;
+        }
+
+        public GameObject attachDebuff(Sprite icon)
+        {
+            if (!owner || !owner.transform.CompareTag("Player")) return null;
+            if (!statusBar || !uiDebuffPrefab) return null;
+            var statusInstance = Instantiate(uiDebuffPrefab, statusBar.transform);
+            statusInstance.transform.Find("Icon").GetComponent<Image>().sprite = icon;
+            return statusInstance;
+        }
 
         public void setOwner(GameObject newOwner)
         {

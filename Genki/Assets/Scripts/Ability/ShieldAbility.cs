@@ -9,6 +9,7 @@ namespace Genki.Abilitiy
         public GameObject shieldCirclePrefab;
 
         private GameObject shieldInstance = null;
+        private GameObject statusInstance = null;
         
         public override bool canApply(GameObject target)
         {
@@ -29,6 +30,7 @@ namespace Genki.Abilitiy
                 var characterSystem = owner.GetComponent<CharacterSystem>();
                 characterSystem.canAttack = false;
                 shieldInstance = Instantiate(shieldCirclePrefab, owner.transform);
+                statusInstance = attachBuff(icon);
             }
         }
 
@@ -40,6 +42,8 @@ namespace Genki.Abilitiy
                 characterSystem.canAttack = true;
                 Destroy(shieldInstance);
                 shieldInstance = null;
+                Destroy(statusInstance);
+                statusInstance = null;
             }
         }
     }

@@ -12,6 +12,7 @@ TagManager:
   - searcher
   - AbilityBar
   - Item
+  - StatusBar
   layers:
   - Default
   - TransparentFX

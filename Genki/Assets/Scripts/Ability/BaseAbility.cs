@@ -150,5 +150,11 @@ namespace Genki.Abilitiy
         {
             quantity = 0;
         }
+
+        public void renew()
+        {
+            cooldown = 0;
+            sharedCooldown = 0;
+        }
     }
 }

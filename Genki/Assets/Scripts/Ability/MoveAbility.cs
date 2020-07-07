@@ -9,13 +9,13 @@ namespace Genki.Abilitiy
         public float changeAmount = 2.5f;
         private GameObject statusInstance = null;
         
-        public override bool canApply(GameObject target)
+        public override bool canApply()
         {
             if (!canStartTimer()) return false;
             return owner && !statusInstance;
         }
 
-        protected override void activate(GameObject target)
+        protected override void activate()
         {
             if (owner)
             {

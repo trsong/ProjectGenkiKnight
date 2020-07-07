@@ -13,7 +13,7 @@ namespace Genki.Abilitiy
 
         private CharacterSystem characterSystem = null;
         
-        public override bool canApply(GameObject target)
+        public override bool canApply()
         {
             if (!canStartTimer()) return false;
             
@@ -25,7 +25,7 @@ namespace Genki.Abilitiy
             return false;
         }
 
-        protected override void activate(GameObject target)
+        protected override void activate()
         {
             if (owner)
             {

@@ -12,19 +12,19 @@ namespace Genki.Abilitiy
         private float originalSpeed = 0f;
         private List<GameObject> blockers = null;
 
-        public override bool canApply(GameObject target)
+        public override bool canApply()
         {
             if (!canStartTimer()) return false;
             return owner && !statusInstance;
         }
 
-        protected override void activate(GameObject target)
+        protected override void activate()
         {
             if (owner)
             {
                 var characterSystem = owner.GetComponent<CharacterSystem>();
                 originalSpeed = characterSystem.speed;
-                characterSystem.speed = 0f;
+                characterSystem.speed -= originalSpeed;
                 statusInstance = attachDebuff(icon);
                 if(blockers == null) blockers = new List<GameObject>();
 
@@ -46,7 +46,7 @@ namespace Genki.Abilitiy
             if (owner)
             {
                 var characterSystem = owner.GetComponent<CharacterSystem>();
-                characterSystem.speed = originalSpeed;
+                characterSystem.speed += originalSpeed;
                 Destroy(statusInstance);
                 statusInstance = null;
                 foreach (var blocker in blockers)

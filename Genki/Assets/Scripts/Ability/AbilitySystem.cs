@@ -64,7 +64,8 @@ namespace Genki.Abilitiy
                 return;
             }
             
-            abilities[abilityIndex].apply(target);
+            abilities[abilityIndex].setOwner(target);
+            abilities[abilityIndex].apply();
         }
 
         void Update()
@@ -86,10 +87,8 @@ namespace Genki.Abilitiy
                 List<Ability> updatedExternalEffects = new List<Ability>();
                 foreach (var ability in externalEffects)
                 {
-                    Debug.Log("Cooldown" + ability.getCooldownInSec());
-                    if (ability.canApply(null))
+                    if (ability.canApply())
                     {
-                        Debug.Log("Remove effect");
                         ability.delete();
                         Destroy(ability);
                     }
@@ -109,7 +108,7 @@ namespace Genki.Abilitiy
         public void addExternalEffect(Ability effect)
         {
             effect.setOwner(gameObject);
-            effect.apply(gameObject);
+            effect.apply();
             externalEffects.Add(effect);
         }
     }

@@ -73,23 +73,23 @@ namespace Genki.Abilitiy
         }
 
 
-        public virtual bool canApply(GameObject target)
+        public virtual bool canApply()
         {
             return canStartTimer();
         }
 
-        public virtual void apply(GameObject target)
+        public virtual void apply()
         {
-            if (canApply(target))
+            if (canApply())
             {
-                activate(target);
+                activate();
                 startTimer();
                 inEffect = true;
                 effectTimeInSec = Math.Min(maxEffectTimeInSec, maxCooldownInSec) - 0.01f;
             }
         }
 
-        protected abstract void activate(GameObject target);
+        protected abstract void activate();
 
         protected virtual void deactivate()
         {

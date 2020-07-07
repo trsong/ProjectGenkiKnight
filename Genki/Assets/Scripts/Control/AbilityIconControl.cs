@@ -34,7 +34,7 @@ public class AbilityIconControl : MonoBehaviour
     {
         if(ability == null) return;
 
-        if (ability.canApply(null))
+        if (ability.canApply())
         {
             cooldownIcon.SetActive(false);
         }
@@ -63,7 +63,7 @@ public class AbilityIconControl : MonoBehaviour
     public void OnClickButton(){
         if (ability != null)
         {
-            ability.apply(null);
+            ability.apply();
         }
     }
 }

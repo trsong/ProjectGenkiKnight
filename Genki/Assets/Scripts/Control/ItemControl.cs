@@ -26,7 +26,7 @@ public class ItemControl : MonoBehaviour
             if (autoUsed)
             {
                 _ability.setOwner(other.gameObject);
-                _ability.apply(other.gameObject);
+                _ability.apply();
                 _ability.delete();
             }
             else

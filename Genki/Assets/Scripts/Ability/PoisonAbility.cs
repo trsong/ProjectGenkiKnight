@@ -11,14 +11,14 @@ namespace Genki.Abilitiy
         private GameObject statusInstance = null;
         private HealthSystem healthSystem = null;
         private bool targetCanSelfHeal = false;
-        public override bool canApply(GameObject target)
+        public override bool canApply()
         {
             if (!canStartTimer()) return false;
             if (!healthSystem) healthSystem = owner.GetComponent<HealthSystem>();
             return owner && !statusInstance;
         }
 
-        protected override void activate(GameObject target)
+        protected override void activate()
         {
             if (owner)
             {

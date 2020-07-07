@@ -36,7 +36,7 @@ namespace Genki.Abilitiy
             }
         }
 
-        public GameObject attachBuff(Sprite icon)
+        protected GameObject attachBuff(Sprite icon)
         {
             if (!owner || !owner.transform.CompareTag("Player")) return null;
             if (!statusBar || !uiBuffPrefab) return null;
@@ -45,7 +45,7 @@ namespace Genki.Abilitiy
             return statusInstance;
         }
 
-        public GameObject attachDebuff(Sprite icon)
+        protected GameObject attachDebuff(Sprite icon)
         {
             if (!owner || !owner.transform.CompareTag("Player")) return null;
             if (!statusBar || !uiDebuffPrefab) return null;

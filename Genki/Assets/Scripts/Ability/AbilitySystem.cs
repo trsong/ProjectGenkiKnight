@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Genki.Abilitiy
@@ -10,6 +11,8 @@ namespace Genki.Abilitiy
         private GameObject _abilityBar = null;
 
         private const int abilityBarCapacity = 8;
+        private List<Ability> externalEffects;
+        private int timer = 0;
 
         public GameObject abilityBar
         {
@@ -27,6 +30,7 @@ namespace Genki.Abilitiy
             {
                 ability.setOwner(gameObject);
             }
+            externalEffects = new List<Ability>();
         }
 
         public void bindKeyToAbility()
@@ -65,12 +69,48 @@ namespace Genki.Abilitiy
 
         void Update()
         {
+            timer += 1;
             if (abilities == null) return;
 
             foreach (var ability in abilities)
             {
                 ability.tick();
             }
+            foreach (var ability in externalEffects)
+            {
+                ability.tick();
+            }
+
+            if (timer % 60 == 0)
+            {
+                List<Ability> updatedExternalEffects = new List<Ability>();
+                foreach (var ability in externalEffects)
+                {
+                    Debug.Log("Cooldown" + ability.getCooldownInSec());
+                    if (ability.canApply(null))
+                    {
+                        Debug.Log("Remove effect");
+                        ability.delete();
+                        Destroy(ability);
+                    }
+                    else
+                    {
+                        updatedExternalEffects.Add(ability);
+                    }
+                }
+
+                if (updatedExternalEffects.Count > 0)
+                {
+                    externalEffects = updatedExternalEffects;
+                }
+            }
+        }
+
+        public void addExternalEffect(Ability effect)
+        {
+            effect.setOwner(gameObject);
+            effect.apply(gameObject);
+            externalEffects.Add(effect);
         }
     }
 }

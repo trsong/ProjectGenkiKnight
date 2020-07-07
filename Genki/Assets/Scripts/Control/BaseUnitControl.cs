@@ -39,6 +39,9 @@ namespace Genki.Control
             if (other.transform.CompareTag("Bullet"))
             {
                 IUnitControl shooter = other.gameObject.GetComponent<BulletCollision>().getOwner();
+                var isOtherEnemy = shooter.getCharacterSystem().isEnemy();
+                var isMeEnemy = characterSystem.isEnemy();
+                if (isOtherEnemy && isMeEnemy) return;
                 var enemyWeapon = shooter.getWeaponSystem();
                 var damage = enemyWeapon.CalculateDamage(this);
                 healthSystem.TakeDamage(damage);

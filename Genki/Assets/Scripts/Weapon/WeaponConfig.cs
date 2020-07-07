@@ -1,4 +1,5 @@
 using System;
+using Genki.Abilitiy;
 using Genki.Control;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace Genki.Weapon
         public float weaponDamage = 10f;
         public float timeToWaitBetweenHits = 2.5f;
         public float bulletForce = 20f;
+        public Ability weaponAbility = null;
 
         public virtual void GenerateBullet(Transform firePoint, IUnitControl owner)
         {
@@ -17,6 +19,11 @@ namespace Genki.Weapon
         }
         
         public virtual void GenerateBullet(IUnitControl owner, Vector2 position, Quaternion rotation, Vector2 direction)
+        {
+            GenerateOneBullet(owner, position, rotation, direction);
+        }
+        
+        protected virtual void GenerateOneBullet(IUnitControl owner, Vector2 position, Quaternion rotation, Vector2 direction)
         {
             GameObject b = Instantiate(gameObject, position, rotation);
             BulletCollision bc = b.GetComponent<BulletCollision>();

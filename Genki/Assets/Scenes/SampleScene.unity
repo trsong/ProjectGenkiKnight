@@ -1321,7 +1321,7 @@ PrefabInstance:
     - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
       propertyPath: abilities.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
@@ -1345,7 +1345,7 @@ PrefabInstance:
         type: 3}
       propertyPath: abilities.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 031d9f50002674fab9153c6a79f9bd93,
+      objectReference: {fileID: 11400000, guid: 5035962184a544127a0e1b0ff85e97a1,
         type: 2}
     - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
@@ -1364,6 +1364,12 @@ PrefabInstance:
       propertyPath: abilities.Array.data[6]
       value: 
       objectReference: {fileID: 11400000, guid: 2d2303527a127400cb24c1978959ff11,
+        type: 2}
+    - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: abilities.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: f1faad37c72c045ada68b3790a6cbf7c,
         type: 2}
     - target: {fileID: 8891691061001226027, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}

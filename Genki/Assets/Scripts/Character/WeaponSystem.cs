@@ -53,6 +53,11 @@ namespace Genki.Character
 
         public float CalculateDamage(IUnitControl target)
         {
+            if (!target.getCharacterSystem().canAttack)
+            {
+                return 0f;
+            }
+
             bool isCriticalHit = UnityEngine.Random.Range(0f, 1f) <= criticalHitChance;
             float damageBeforeCritical = baseDamage + currentWeaponConfig.weaponDamage;
             float dmg = isCriticalHit ? damageBeforeCritical * criticalHitMultiplier : damageBeforeCritical;

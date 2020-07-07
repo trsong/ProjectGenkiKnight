@@ -10,9 +10,12 @@ namespace Genki.Abilitiy
         public int maxQuantity = 99;
         public GameObject uiIconPrefab = null;
         public float maxCooldownInSec = 1f; // in seconds
+        public float maxEffectTimeInSec = 0f; // in seconds
         
         protected GameObject owner = null;
-        
+
+        private float effectTimeInSec = 0f;
+        private bool inEffect = false;
         private float cooldown;
         private bool canActivate = true;
         private int quantity = 0;
@@ -24,6 +27,8 @@ namespace Genki.Abilitiy
             quantity = maxQuantity;
             canActivate = true;
             cooldown = 0;
+            effectTimeInSec = maxEffectTimeInSec;
+            inEffect = false;
         }
         
         public void attachToAbilityBar(GameObject abilityBar)
@@ -44,12 +49,18 @@ namespace Genki.Abilitiy
         {
             if (canApply(target))
             {
-                startTimer();
                 activate(target);
+                startTimer();
+                inEffect = true;
+                effectTimeInSec = Math.Min(maxEffectTimeInSec, maxCooldownInSec) - 0.01f;
             }
         }
 
         protected abstract void activate(GameObject target);
+
+        protected virtual void deactivate()
+        {
+        }
 
         protected bool canStartTimer()
         {
@@ -83,6 +94,12 @@ namespace Genki.Abilitiy
             else
             {
                 canActivate = true;
+            }
+
+            if (inEffect && (maxCooldownInSec - cooldown/60) >= effectTimeInSec)
+            {
+                inEffect = false;
+                deactivate();
             }
         }
 

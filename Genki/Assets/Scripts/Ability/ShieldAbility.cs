@@ -27,7 +27,7 @@ namespace Genki.Abilitiy
 
         protected override void activate(GameObject target)
         {
-            if (owner != null)
+            if (owner)
             {
                 if(!characterSystem) characterSystem = owner.GetComponent<CharacterSystem>();
                 characterSystem.canAttack = false;
@@ -38,7 +38,7 @@ namespace Genki.Abilitiy
 
         protected override void deactivate()
         {
-            if (owner != null)
+            if (owner)
             {
                 if(!characterSystem) characterSystem = owner.GetComponent<CharacterSystem>();
                 characterSystem.canAttack = true;

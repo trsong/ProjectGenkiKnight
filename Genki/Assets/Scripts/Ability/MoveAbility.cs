@@ -17,7 +17,7 @@ namespace Genki.Abilitiy
 
         protected override void activate(GameObject target)
         {
-            if (owner != null)
+            if (owner)
             {
                 var characterSystem = owner.GetComponent<CharacterSystem>();
                 characterSystem.speed += changeAmount;
@@ -34,7 +34,7 @@ namespace Genki.Abilitiy
 
         protected override void deactivate()
         {
-            if (!owner)
+            if (owner)
             {
                 var characterSystem = owner.GetComponent<CharacterSystem>();
                 characterSystem.speed -= changeAmount;

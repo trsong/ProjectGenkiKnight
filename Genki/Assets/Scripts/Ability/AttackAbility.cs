@@ -34,7 +34,7 @@ namespace Genki.Abilitiy
 
         protected override void deactivate()
         {
-            if (!owner)
+            if (owner)
             {
                 var weaponSystem = owner.GetComponent<WeaponSystem>();
                 weaponSystem.baseDamage -= changeAmount;

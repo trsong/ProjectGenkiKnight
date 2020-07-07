@@ -12,7 +12,7 @@ namespace Genki.Abilitiy
         {
             if (!canStartTimer()) return false;
             
-            if (owner != null)
+            if (owner)
             {
                 var healthSystem = owner.GetComponent<HealthSystem>();
                 return healthSystem.CanHeal();
@@ -22,7 +22,7 @@ namespace Genki.Abilitiy
 
         protected override void activate(GameObject target)
         {
-            if (owner != null)
+            if (owner)
             {
                 var healthSystem = owner.GetComponent<HealthSystem>();
                 healthSystem.Heal(healAmount);

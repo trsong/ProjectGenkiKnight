@@ -18,7 +18,7 @@ namespace Genki.Abilitiy
         protected GameObject owner = null;
 
         private float effectTimeInSec = 0f;
-        private bool inEffect = false;
+        protected bool inEffect = false;
         private float cooldown;
         private bool canActivate = true;
         private int quantity = 0;
@@ -111,7 +111,7 @@ namespace Genki.Abilitiy
             }
         }
 
-        public void tick()
+        public virtual void tick()
         {
             if (sharedCooldown > 0)
             {

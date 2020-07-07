@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7995e6d83c9148088f9a562fbadcb042, type: 3}
-  m_Name: Poison30
+  m_Name: Poison20
   m_EditorClassIdentifier: 
-  description: Poi
+  description: POI
   icon: {fileID: 21300000, guid: ee1e057e2b9403a4494cc60f1a894499, type: 3}
   maxQuantity: 99
   uiIconPrefab: {fileID: 1725495650898500, guid: 9ae09d1bbaebea64788a1d018f36a739,
     type: 3}
   maxCooldownInSec: 120
-  maxEffectTimeInSec: 30
+  maxEffectTimeInSec: 20
   uiBuffPrefab: {fileID: 5607392568929158369, guid: 47b86fb68ed524ad4ab5f736d254a8cf,
     type: 3}
   uiDebuffPrefab: {fileID: 8157491351374512476, guid: aae74ae3d330b461cbb85ad9c0919ed6,
     type: 3}
-  poisonDmgInSec: 1
+  poisonDmgInSec: 0.8

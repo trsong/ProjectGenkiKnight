@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9d434c01614bb28e06b2f3ccfdff6e, type: 3}
   m_Name: MoveUp2.5
   m_EditorClassIdentifier: 
-  description: "Move\u2191"
+  description: "MOV\u2191"
   icon: {fileID: 21300000, guid: 2e051677793370942b3b69d8fcfb661d, type: 3}
   maxQuantity: 99
   uiIconPrefab: {fileID: 1725495650898500, guid: 9ae09d1bbaebea64788a1d018f36a739,

@@ -15,7 +15,7 @@ namespace Genki.Abilitiy
         {
             if (!canStartTimer()) return false;
             if (!healthSystem) healthSystem = owner.GetComponent<HealthSystem>();
-            return owner && !statusInstance && healthSystem.healthAsPercentage > 0.01f;
+            return owner && !statusInstance;
         }
 
         protected override void activate(GameObject target)

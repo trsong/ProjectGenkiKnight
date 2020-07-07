@@ -12,9 +12,11 @@ namespace Genki.Weapon
             var rotation = firePoint.rotation;
             var position = firePoint.position;
 
+
             var direction1 = -up * bulletForce + right*2f;
             var direction2 = -up * bulletForce;
             var direction3 = -up * bulletForce - right*2f;
+            
 
             GenerateOneBullet(owner, position, rotation, direction1);
             GenerateOneBullet(owner, position, rotation, direction2);

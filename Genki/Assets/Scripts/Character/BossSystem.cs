@@ -2,17 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossSystem : MonoBehaviour
+namespace Genki.Character
 {
-    // Start is called before the first frame update
-    void Start()
+    public class BossSystem : CharacterSystem
     {
-        
+        public Animator a;
+        public Transform enemyPos;
+        protected WeaponSystem weaponSystem;
+
+        private int Timer = 0;
+
+        void Start()
+        {
+            weaponSystem = GetComponent<WeaponSystem>();   
+        }
+
+        void Update()
+        {
+            Timer++;
+            a = GetComponent<Animator>();
+            
+            if (Timer % 150 == 0)
+            {
+                attack();
+            }
+        }
+
+        void FixedUpdate()
+        {
+            //null
+        }
+
+        void attack()
+        {
+            weaponSystem.shootBoss(enemyPos.transform);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+

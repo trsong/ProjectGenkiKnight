@@ -90,5 +90,14 @@ namespace Genki.Character
                 readyToAttack = false;
             }
         }
+
+        public void shootBoss(Transform pos)
+        {
+            if (readyToAttack)
+            {
+                currentWeaponConfig.GenerateBullet(pos, owner);
+                readyToAttack = false;
+            }
+        }
     }
 }

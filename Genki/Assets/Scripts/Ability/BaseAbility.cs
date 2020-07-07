@@ -16,6 +16,7 @@ namespace Genki.Abilitiy
         private float cooldown;
         private bool canActivate = true;
         private int quantity = 0;
+        private static int sharedCooldown = 0; // 3 secs common cd
 
         public void setOwner(GameObject newOwner)
         {
@@ -61,12 +62,18 @@ namespace Genki.Abilitiy
             {
                canActivate = false;
                cooldown = maxCooldownInSec * 60;
+               sharedCooldown = 3 * 60;
                quantity -= 1;
             }
         }
 
         public void tick()
         {
+            if (sharedCooldown > 0)
+            {
+                sharedCooldown -= 1;
+            }
+
             if (canStartTimer()) return;
 
             if (cooldown > 0)
@@ -81,7 +88,7 @@ namespace Genki.Abilitiy
 
         public int getCooldownInSec()
         {
-            return (int) cooldown / 60;
+            return (int) (cooldown + sharedCooldown) / 60;
         }
 
         public int getQuantity()

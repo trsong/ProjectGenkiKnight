@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4510831518678396190}
   - component: {fileID: 5698668424699261440}
   m_Layer: 0
-  m_Name: TrapDoors
+  m_Name: TrapDoorOne
   m_TagString: searcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1743346776285778613}
-  - {fileID: 5006441486751870615}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72,91 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab5b1a1396267847ab6d20bd3cc8490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &155924564902102006
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4378449803558666279}
-    m_Modifications:
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139592960154856806, guid: 07c0fc7cba932bb4184203796118eade,
-        type: 3}
-      propertyPath: m_Name
-      value: Door (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 07c0fc7cba932bb4184203796118eade, type: 3}
---- !u!4 &5006441486751870615 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5139592960154856801, guid: 07c0fc7cba932bb4184203796118eade,
-    type: 3}
-  m_PrefabInstance: {fileID: 155924564902102006}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6873087012475699156
 PrefabInstance:
   m_ObjectHideFlags: 0

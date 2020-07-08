@@ -33,7 +33,6 @@ namespace Genki.Weapon
 
             var offset = direction2.normalized;
             var r_offset = Vector3.right;
-            Debug.Log(offset);
             GenerateBullet(owner, position + offset, rotation, direction1);
             GenerateBullet(owner, position + offset, rotation, direction2);
             GenerateBullet(owner, position + offset, rotation, direction3);

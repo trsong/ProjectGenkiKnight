@@ -9,12 +9,15 @@ namespace Genki.Character
         public Animator a;
         public Transform enemyPos;
         protected WeaponSystem weaponSystem;
+        protected HealthSystem healthSystem;
+        public GameObject weapon;
 
         private int Timer = 0;
 
         void Start()
         {
-            weaponSystem = GetComponent<WeaponSystem>();   
+            weaponSystem = GetComponent<WeaponSystem>();
+            healthSystem = GetComponent<HealthSystem>();
         }
 
         void Update()
@@ -25,6 +28,11 @@ namespace Genki.Character
             if (Timer % 150 == 0)
             {
                 attack();
+            }
+
+            if(healthSystem.currentHealthPoint <= healthSystem.maxHealthPoint / 2)
+            {
+                weaponSystem.EquipWeapon(this.weapon);
             }
         }
 

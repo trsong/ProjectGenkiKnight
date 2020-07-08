@@ -69,12 +69,17 @@ namespace Genki.Character
 
         public void KillCharacter()
         {
+            if(this.tag == "Player"){
             int currentIndex = SceneManager.GetActiveScene().buildIndex;
             int oldIndex = PlayerPrefs.GetInt("index");
             if(currentIndex > oldIndex){
                 PlayerPrefs.SetInt("index",currentIndex);
             }
             SceneManager.LoadScene(1);
+            }
+            else{
+                Destroy(this.gameObject);
+            }
         }
         
         public bool IsDead()

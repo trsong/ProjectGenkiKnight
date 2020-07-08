@@ -5,13 +5,35 @@ using UnityEngine.SceneManagement;
 public class SceneSwitchButton : MonoBehaviour
 {
     public Animator transition;
-    public void SwitchScene ()
+    public void SwitchSceneToStart()
     {
-        StartCoroutine(switchNext());
+        StartCoroutine(SwitchToStart());
     }
-    IEnumerator switchNext(){
+    IEnumerator SwitchToStart()
+    {
         transition.SetTrigger("end");
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
+    }
+    public void SwitchSceneToDeadLevel()
+    {
+        StartCoroutine(SwitchToDeadLevel());
+    }
+    IEnumerator SwitchToDeadLevel()
+    {
+        transition.SetTrigger("end");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("index"));
+    }
+    public void SwitchSceneToFirstLevel()
+    {
+        StartCoroutine(SwitchToFirstLevel());
+    }
+    IEnumerator SwitchToFirstLevel()
+    {
+        transition.SetTrigger("end");
+        yield return new WaitForSeconds(1f);
+        PlayerPrefs.SetInt("index", 0);
+        SceneManager.LoadScene(2);
     }
 }

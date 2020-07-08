@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Genki.Control;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Genki.Character
 {
@@ -52,7 +53,7 @@ namespace Genki.Character
             if (characterDies)
             {
                 // Determine if character can revive or prompt death msg and restart the game
-                StartCoroutine(KillCharacter());
+                KillCharacter();
             }
         }
 
@@ -66,10 +67,14 @@ namespace Genki.Character
             return (maxHealthPoint - currentHealthPoint) > 1f;
         }
 
-        IEnumerator KillCharacter()
+        public void KillCharacter()
         {
-            Destroy(gameObject);
-            yield return null;
+            int currentIndex = SceneManager.GetActiveScene().buildIndex;
+            int oldIndex = PlayerPrefs.GetInt("index");
+            if(currentIndex > oldIndex){
+                PlayerPrefs.SetInt("index",currentIndex);
+            }
+            SceneManager.LoadScene(1);
         }
         
         public bool IsDead()

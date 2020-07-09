@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Genki.Abilitiy;
 using Genki.Control;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,6 @@ namespace Genki.Character
 {
     public class HealthSystem : MonoBehaviour
     {
-        
         public float maxHealthPoint = 100f;
         public float currentHealthPoint = 100f;
         public bool canSelfRegen = false;
@@ -18,7 +18,7 @@ namespace Genki.Character
         {
             get => currentHealthPoint / maxHealthPoint;
         }
-        
+
         void Update()
         {
             UpdateHealthBar();
@@ -35,15 +35,15 @@ namespace Genki.Character
 
         void HealthRegen()
         {
-            if(canSelfRegen && currentHealthPoint<maxHealthPoint)
+            if (canSelfRegen && currentHealthPoint < maxHealthPoint)
             {
-                if(currentHealthPoint <= 0)
+                if (currentHealthPoint <= 0)
                 {
                     return;
                 }
+
                 Heal(0.05f);
             }
-
         }
 
         public void TakeDamage(float damage)
@@ -52,7 +52,12 @@ namespace Genki.Character
             currentHealthPoint = Mathf.Clamp(currentHealthPoint - damage, 0f, maxHealthPoint);
             if (characterDies)
             {
+                var abilitySystem = gameObject.GetComponent<AbilitySystem>();
                 // Determine if character can revive or prompt death msg and restart the game
+                if (abilitySystem && abilitySystem.attemptToRevive())
+                {
+                    return;
+                }
                 KillCharacter();
             }
         }
@@ -69,19 +74,23 @@ namespace Genki.Character
 
         public void KillCharacter()
         {
-            if(this.tag == "Player"){
-            int currentIndex = SceneManager.GetActiveScene().buildIndex;
-            int oldIndex = PlayerPrefs.GetInt("index");
-            if(currentIndex > oldIndex){
-                PlayerPrefs.SetInt("index",currentIndex);
+            if (this.tag == "Player")
+            {
+                int currentIndex = SceneManager.GetActiveScene().buildIndex;
+                int oldIndex = PlayerPrefs.GetInt("index");
+                if (currentIndex > oldIndex)
+                {
+                    PlayerPrefs.SetInt("index", currentIndex);
+                }
+
+                SceneManager.LoadScene(1);
             }
-            SceneManager.LoadScene(1);
-            }
-            else{
+            else
+            {
                 Destroy(this.gameObject);
             }
         }
-        
+
         public bool IsDead()
         {
             return currentHealthPoint <= 0;

@@ -120,5 +120,19 @@ namespace Genki.Abilitiy
             effect.apply();
             externalEffects.Add(effect);
         }
+
+        public bool attemptToRevive()
+        {
+            var reviveAbility = abilities.Find(x => x is ReviveAbility && x.canApply());
+            if (reviveAbility)
+            {
+                reviveAbility.apply();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

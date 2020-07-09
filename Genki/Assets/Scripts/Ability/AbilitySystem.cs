@@ -52,9 +52,18 @@ namespace Genki.Abilitiy
                 abilities.RemoveAt(0);
             }
 
-            abilities.Add(ability);
             ability.setOwner(gameObject);
-            ability.attachToAbilityBar(abilityBar);
+
+            var existingAbility = abilities.Find(x => x.description == ability.description);
+            if (existingAbility)
+            {
+                existingAbility.mergeAbility(ability);
+            }
+            else
+            {
+                abilities.Add(ability);
+                ability.attachToAbilityBar(abilityBar);
+            }
         }
 
         public void applyAbility(int abilityIndex, GameObject target = null)

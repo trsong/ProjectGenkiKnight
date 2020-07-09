@@ -156,5 +156,14 @@ namespace Genki.Abilitiy
             cooldown = 0;
             sharedCooldown = 0;
         }
+
+        public void mergeAbility(Ability ability)
+        {
+            if (ability.owner != owner) return;
+            if (ability.GetType() != GetType()) return;
+            quantity += ability.quantity;
+            ability.delete();
+            renew();
+        }
     }
 }

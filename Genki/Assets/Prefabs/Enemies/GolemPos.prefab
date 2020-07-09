@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd919ec45efa4cde8670ec5a68d21a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 4775345068356378801, guid: 0e2e7e0b42e854e7fa765500fbefac59, type: 3}
+  weapon: {fileID: 2343851600188540824, guid: 064a6ac9c85fb924dad08b0f4ab7bf47, type: 3}
   damagePopup: {fileID: 2482577687471222703, guid: d5cbb6859cac94e41a282a83df2e600c,
     type: 3}
   baseDamage: 15
@@ -468,7 +468,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2221129558819298748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.052, y: 0.483, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2221129557494041684}

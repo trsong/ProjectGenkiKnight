@@ -73089,11 +73089,17 @@ PrefabInstance:
     - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
       propertyPath: abilities.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
         type: 3}
       propertyPath: abilities.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 664359b743cc94c39b1644d685788c78,
+        type: 2}
+    - target: {fileID: 8891691061001226026, guid: 58e6d0c6e7a4df04e8fec808bf743247,
+        type: 3}
+      propertyPath: abilities.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: ba44471329a7b4d62b437c1960236bfa,
         type: 2}

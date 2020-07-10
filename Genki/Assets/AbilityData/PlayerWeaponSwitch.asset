@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a467acd11a2040feaf9b824036ef1984, type: 3}
   m_Name: PlayerWeaponSwitch
   m_EditorClassIdentifier: 
-  description: 
-  icon: {fileID: 0}
+  description: WP
+  icon: {fileID: 21300000, guid: 4e04f07caf06a3c4eafb399afc741c92, type: 3}
   maxQuantity: 99
-  uiIconPrefab: {fileID: 0}
+  uiIconPrefab: {fileID: 1725495650898500, guid: 9ae09d1bbaebea64788a1d018f36a739,
+    type: 3}
   maxCooldownInSec: 1
-  maxEffectTimeInSec: 0
+  maxEffectTimeInSec: 1
   uiBuffPrefab: {fileID: 0}
   uiDebuffPrefab: {fileID: 0}
-  weapons: []
+  weapons:
+  - {fileID: 5259197917406913395, guid: ec9ed3dd040607c47aa586545ae99bad, type: 3}
+  - {fileID: 6199990765139538479, guid: fa8441fa48295954e85f07658ce49470, type: 3}

@@ -6,31 +6,38 @@ namespace Genki.Control
 {
     public class PlayerWeaponMovementControl : MonoBehaviour
     {
-        private SearchNearestEnemy searcher;
         Vector2 mousePos;
         private SpriteRenderer sprite;
         public Camera camera;
+        bool isUsingMouse;
+        protected Joystick joyStickRight;
         void Start()
         {
             sprite = this.transform.GetChild(0).GetComponent<SpriteRenderer>();
-            searcher = FindObjectOfType<SearchNearestEnemy>();
+            isUsingMouse = false;
+            mousePos = Input.mousePosition;
+            joyStickRight = GameObject.Find("Fixed Joystick Right").GetComponent<Joystick>();
         }
 
         void Update()
         {
+            checkMode();
             rotate();
         }
 
         void rotate()
         {
-            mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
-            GameObject nearestEnemy = searcher.getNearestEnemy();
-            if (nearestEnemy)
+            Vector2 lookDir;
+            if (isUsingMouse)
             {
-                mousePos = new Vector2(nearestEnemy.transform.position.x, nearestEnemy.transform.position.y);
+                mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+                lookDir = mousePos - new Vector2(transform.position.x, transform.position.y);
+            }
+            else
+            {
+                lookDir = new Vector2(joyStickRight.Horizontal, joyStickRight.Vertical);
             }
             
-            Vector2 lookDir = mousePos - new Vector2(transform.position.x, transform.position.y);
             float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg + 90f;
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             transform.rotation = rotation;
@@ -43,6 +50,17 @@ namespace Genki.Control
                 sprite.sortingOrder = 6;
             }
 
+        }
+        void checkMode()
+        {
+            if (mousePos.Equals(Input.mousePosition))
+            {
+                isUsingMouse = false;
+            }
+            else
+            {
+                isUsingMouse = true;
+            }
         }
     }
 }

@@ -23,6 +23,8 @@ namespace Genki.Character
 
         private int MaxTimer => (int)(currentWeaponConfig.timeToWaitBetweenHits * 60);
 
+        private AudioSource audioSource;
+
         // Use this for initialization
         void Start()
         {
@@ -31,6 +33,11 @@ namespace Genki.Character
             if (damagePopup != null)
             {
                 damagePopupControl = damagePopup.GetComponent<DamagePopupControl>();
+            }
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource)
+            {
+                audioSource.clip = currentWeaponConfig.audioClip;
             }
         }
 
@@ -49,6 +56,10 @@ namespace Genki.Character
         {
             weapon = updateWeapon;
             currentWeaponConfig = updateWeapon.GetComponent<WeaponConfig>();
+            if (audioSource)
+            {
+                audioSource.clip = currentWeaponConfig.audioClip;
+            }
         }
 
         public float CalculateDamage(IUnitControl target)
@@ -97,6 +108,14 @@ namespace Genki.Character
             {
                 currentWeaponConfig.GenerateBullet(pos, owner);
                 readyToAttack = false;
+            }
+        }
+
+        public void playShootAudio()
+        {
+            if (audioSource)
+            {
+                audioSource.Play();
             }
         }
     }

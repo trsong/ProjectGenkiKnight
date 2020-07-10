@@ -12,6 +12,7 @@ namespace Genki.Weapon
         public float timeToWaitBetweenHits = 2.5f;
         public float bulletForce = 20f;
         public Ability weaponAbility = null;
+        public AudioClip audioClip;
 
         public virtual void GenerateBullet(Transform firePoint, IUnitControl owner)
         {

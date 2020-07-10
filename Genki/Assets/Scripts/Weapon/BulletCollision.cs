@@ -59,6 +59,11 @@ namespace Genki.Weapon
                 var isOtherEnemy = otherCharacterSystem && otherCharacterSystem.isEnemy();
                 if (isOtherEnemy && isMeEnemy) return;
 
+                if (isOtherEnemy && owner.getCharacterSystem().CompareTag("Player"))
+                {
+                    owner.getWeaponSystem().playShootAudio();
+                }
+
                 AbilitySystem abilitySystem = other.gameObject.GetComponent<AbilitySystem>();
                 if (abilitySystem && weaponAbility)
                 {

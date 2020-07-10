@@ -150,3 +150,5 @@ MonoBehaviour:
   weaponDamage: 20
   timeToWaitBetweenHits: 1
   bulletForce: 7
+  weaponAbility: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 289603236c38c1e4db8cb8a9816c49c5, type: 3}

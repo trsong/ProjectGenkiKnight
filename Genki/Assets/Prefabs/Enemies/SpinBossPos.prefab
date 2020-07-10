@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8639530018608504473}
   m_Layer: 0
-  m_Name: BossPos 1
+  m_Name: SpinBossPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,6 +541,7 @@ MonoBehaviour:
   speed: 5
   a: {fileID: 8639530018809472307}
   enemyPos: {fileID: 8639530018608504473}
+  weapon: {fileID: 0}
 --- !u!1 &8639530019417427408
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8639530019417427408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.062, y: 0.725, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8639530018629082168}

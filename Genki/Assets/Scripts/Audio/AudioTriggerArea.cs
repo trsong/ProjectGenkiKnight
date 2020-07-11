@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class AudioTriggerArea : MonoBehaviour
 {
-    private AudioSource audioSource;
+    public AudioClip clip;
+    private BackGroundMusicControl control;
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        control = FindObjectOfType<BackGroundMusicControl>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            audioSource.Play();
+            control.playBGM(clip);
         }
     }
 
@@ -22,7 +23,7 @@ public class AudioTriggerArea : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            audioSource.Stop();
+            control.resetBGM();
         }
     }
 }

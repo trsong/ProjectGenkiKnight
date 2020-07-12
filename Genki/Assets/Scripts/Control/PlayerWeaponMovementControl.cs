@@ -21,7 +21,7 @@ namespace Genki.Control
 
         void Update()
         {
-            checkMode();
+            //checkMode();
             rotate();
         }
 

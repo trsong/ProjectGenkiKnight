@@ -23,6 +23,7 @@ namespace Genki.Weapon
             startPosition = newOwner.getStartPosition();
             canBreakTrough = weaponConfig.canBreakTrough();
             weaponAbility = weaponConfig.weaponAbility;
+            Debug.Log(maxDistance);
         }
 
         public IUnitControl getOwner()

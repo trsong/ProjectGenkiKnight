@@ -33,14 +33,14 @@ namespace Genki.Weapon
 
             var offset = direction2.normalized;
             var r_offset = Vector3.right;
-            GenerateBullet(owner, position + offset, rotation, direction1);
-            GenerateBullet(owner, position + offset, rotation, direction2);
-            GenerateBullet(owner, position + offset, rotation, direction3);
-            GenerateBullet(owner, position - offset, rotation, direction4);
-            GenerateBullet(owner, position - offset, rotation, direction5);
-            GenerateBullet(owner, position - offset, rotation, direction6);
-            GenerateBullet(owner, position - r_offset, rotation, direction7);
-            GenerateBullet(owner, position + r_offset, rotation, direction8);
+            GenerateBullet(owner, position + 2 * offset, rotation, direction1);
+            GenerateBullet(owner, position + 2 * offset, rotation, direction2);
+            GenerateBullet(owner, position + 2 * offset, rotation, direction3);
+            GenerateBullet(owner, position - 2 * offset, rotation, direction4);
+            GenerateBullet(owner, position - 2 * offset, rotation, direction5);
+            GenerateBullet(owner, position - 2 * offset, rotation, direction6);
+            GenerateBullet(owner, position - 2 * r_offset, rotation, direction7);
+            GenerateBullet(owner, position + 2 * r_offset, rotation, direction8);
 
 
         }

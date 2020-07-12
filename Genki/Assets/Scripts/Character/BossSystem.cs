@@ -11,6 +11,10 @@ namespace Genki.Character
         protected WeaponSystem weaponSystem;
         protected HealthSystem healthSystem;
         public GameObject weapon;
+        public int range;
+        public GameObject attackTarget = null;
+        public bool isAttack = false;
+
 
         private int Timer = 0;
 
@@ -18,6 +22,10 @@ namespace Genki.Character
         {
             weaponSystem = GetComponent<WeaponSystem>();
             healthSystem = GetComponent<HealthSystem>();
+            if (attackTarget == null)
+            {
+                attackTarget = GameObject.FindWithTag("Player");
+            }
         }
 
         void Update()
@@ -25,7 +33,12 @@ namespace Genki.Character
             Timer++;
             a = GetComponent<Animator>();
             
-            if (Timer % 150 == 0)
+            if(Vector3.Distance(attackTarget.transform.position, enemyPos.transform.position) <= range && !isAttack)
+            {
+                isAttack = true;
+            }
+
+            if (Timer % 150 == 0 && isAttack)
             {
                 attack();
             }

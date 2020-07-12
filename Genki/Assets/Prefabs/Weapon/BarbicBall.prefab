@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1185850683
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -8905262027503654984, guid: 8b7c52b79995b8f48984b665dd9edfca,
     type: 3}
@@ -152,3 +152,4 @@ MonoBehaviour:
   timeToWaitBetweenHits: 2.5
   bulletForce: 2
   weaponAbility: {fileID: 0}
+  audioClip: {fileID: 0}

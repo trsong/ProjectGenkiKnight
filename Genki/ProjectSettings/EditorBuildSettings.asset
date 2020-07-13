@@ -11,7 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: fa0b952171354ab46941271dd8fa27df
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FourSages.unity
+    guid: e9356d1217b1b48aa83911eea4b9e17d
+  - enabled: 1
+    path: Assets/Scenes/KingsChamber.unity
+    guid: 416b4730f61eeb64db11a1b545ab627c
   m_configObjects: {}

@@ -147,8 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c58974ace333d9d45aa6019c438d21df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAttackRange: 2
-  weaponDamage: 10
+  maxAttackRange: 3
+  weaponDamage: 15
   timeToWaitBetweenHits: 2.5
   bulletForce: 1
   weaponAbility: {fileID: 0}
+  audioClip: {fileID: 0}

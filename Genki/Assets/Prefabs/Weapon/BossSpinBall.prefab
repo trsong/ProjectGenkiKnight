@@ -149,7 +149,7 @@ MonoBehaviour:
   maxAttackRange: 20
   weaponDamage: 20
   timeToWaitBetweenHits: 2.5
-  bulletForce: 1
+  bulletForce: 3
   weaponAbility: {fileID: 0}
   audioClip: {fileID: 0}
   shotSpinRate: 10

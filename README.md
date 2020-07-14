@@ -14,6 +14,7 @@ Game Project for CS526
 - [Midterm Demo URL](https://youtu.be/IxvhfoNQp0M)
 - [Midterm Feedback](https://docs.google.com/spreadsheets/d/18kGByc2Ii6ljpb96uCYr5Rlkjbwpx9p4YnHPvyBx15A/edit#gid=469799691)
 - [Midterm Retrospective and Action Item](https://docs.google.com/document/d/1Njw5Zg228YvnD1VRBEBNodk5F-VKkmDng-UpH6ZbBjg/edit#)
+- [Final Gameplay URL](https://trsong.github.io/GenkiFinal/)
 
 # Useful Links
 - [Past Game for reference: Sokoban Maker Doc](https://docs.google.com/document/d/1dyBqnhk4F1RAbA_PRE2AHykSwVB3C539JTvrGWFR0VU/edit?ts=5e2fa577)

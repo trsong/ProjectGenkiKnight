@@ -9,14 +9,10 @@ namespace Genki.Control
         Vector2 mousePos;
         private SpriteRenderer sprite;
         public Camera camera;
-        bool isUsingMouse;
-        protected Joystick joyStickRight;
         void Start()
         {
             sprite = this.transform.GetChild(0).GetComponent<SpriteRenderer>();
-            isUsingMouse = false;
             mousePos = Input.mousePosition;
-            joyStickRight = GameObject.Find("Fixed Joystick Right").GetComponent<Joystick>();
         }
 
         void Update()
@@ -28,16 +24,9 @@ namespace Genki.Control
         void rotate()
         {
             Vector2 lookDir;
-            if (isUsingMouse)
-            {
-                mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
-                lookDir = mousePos - new Vector2(transform.position.x, transform.position.y);
-            }
-            else
-            {
-                lookDir = new Vector2(joyStickRight.Horizontal, joyStickRight.Vertical);
-            }
-            
+            mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+            lookDir = mousePos - new Vector2(transform.position.x, transform.position.y);
+
             float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg + 90f;
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             transform.rotation = rotation;
@@ -48,18 +37,6 @@ namespace Genki.Control
             else
             {
                 sprite.sortingOrder = 6;
-            }
-
-        }
-        void checkMode()
-        {
-            if (mousePos.Equals(Input.mousePosition))
-            {
-                isUsingMouse = false;
-            }
-            else
-            {
-                isUsingMouse = true;
             }
         }
     }

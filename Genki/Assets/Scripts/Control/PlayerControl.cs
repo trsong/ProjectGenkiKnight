@@ -8,16 +8,12 @@ namespace Genki.Control
     public class PlayerControl : BaseUnitControl
     {
         public Transform firePoint;
-        protected Joystick joyStickLeft;
-        protected Joystick joyStickRight;
 
         private bool isShootingPressed = false;
 
         protected override void Start()
         {
             base.Start();
-            joyStickLeft = GameObject.Find("Fixed Joystick").GetComponent<Joystick>();
-            joyStickRight = GameObject.Find("Fixed Joystick Right").GetComponent<Joystick>();
             
             GameObject healthBar = GameObject.FindWithTag("PlayerHealthBar");
             healthSystem.healthBar = healthBar.GetComponent<HealthBarControl>();
@@ -32,8 +28,8 @@ namespace Genki.Control
 
         void move()
         {
-            float xMove = Input.GetAxis("Horizontal") + joyStickLeft.Horizontal;
-            float yMove = Input.GetAxis("Vertical") + joyStickLeft.Vertical;
+            float xMove = Input.GetAxis("Horizontal");
+            float yMove = Input.GetAxis("Vertical");
             characterSystem.moveCharacter(xMove, yMove);
         }
 
@@ -46,8 +42,7 @@ namespace Genki.Control
 
             // Debug.Log(joyStickRight.Horizontal);
 
-            if (isShootingPressed || Input.GetButtonDown("Fire1") || 
-                joyStickRight.Horizontal * joyStickRight.Horizontal + joyStickRight.Vertical * joyStickRight.Vertical >= 0.04f)
+            if (isShootingPressed || Input.GetButtonDown("Fire1"))
             {
                 weaponSystem.shoot(firePoint);
             }

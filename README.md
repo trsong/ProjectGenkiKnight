@@ -1,6 +1,12 @@
 # ProjectGenkiKnight
 Game Project for CS526
 
+# Game Overview
+- Game genre: Dungeon Crawler RPG
+- Elevator Pitch: Genki (Spirit) Knight’s adventure is a top-down view dungeon (or Turn-based, TBD) RPG inspired by Entered The Dungeon, Binding of Isaac, and SoulKnight. The Player can choose either strategy in order to beat the game: explore alternative paths and sneak into different rooms to avoid fighting, or eagerly fight to level up and beat the game directly. There would be random chest drops that can help players improve their ability or weapon. Notice that not all fights can be avoided, and certain enemies are surly deadly. The Player needs to utilize limited resources in order to win those fights.
+- Goal: Loot collectables in a maze and reach destination.
+- Mechanism: Move by four directions. Interact with objects. Attack enemies. 
+
 # Team Members 
 - Difei Sun (sdfqb009@gmail.com)
 - Tangrui Song (trsong.cs@gmail.com)

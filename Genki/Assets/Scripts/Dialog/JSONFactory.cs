@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using Dialog;
 using LitJson;
 
 //list of JSON file with path extensions
@@ -19,19 +20,23 @@ namespace JSONFactory
         };
         public static NarrativeEvent RunJSONFactoryForScene(int sceneNumber)
         {
-            string resourcePath = PathForScene(sceneNumber);
-            if (IsValidJSON(resourcePath) == true)
-            {
-                Console.WriteLine("Hello World");
-                string jsonString = File.ReadAllText(Application.dataPath + resourcePath);
-                
-                NarrativeEvent narrativeEvent = JsonMapper.ToObject<NarrativeEvent>(jsonString);
-                return narrativeEvent;
-            }
-            else
-            {
-                throw new Exception("The JSON is not valid. Please check the schema and file extension.");
-            }
+            // string resourcePath = PathForScene(sceneNumber);
+            // if (IsValidJSON(resourcePath) == true)
+            // {
+            //     Console.WriteLine("Hello World");
+            //     string jsonString = File.ReadAllText(Application.dataPath + resourcePath);
+            //     
+            //     NarrativeEvent narrativeEvent = JsonMapper.ToObject<NarrativeEvent>(jsonString);
+            //     return narrativeEvent;
+            // }
+            // else
+            // {
+            //     throw new Exception("The JSON is not valid. Please check the schema and file extension.");
+            // }
+            
+            string jsonString = sceneNumber == 2 ? DialogData.tutorialJson : DialogData.gameEndJson;
+            NarrativeEvent narrativeEvent = JsonMapper.ToObject<NarrativeEvent>(jsonString);
+            return narrativeEvent;
         }
         private static string PathForScene(int sceneNumber)
         {

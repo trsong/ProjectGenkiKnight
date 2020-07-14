@@ -1,45 +1,74 @@
 {
-"dialogues":[
-  {
-    "characterType":0,
-    "name":"Hero",
-    "atlasImageName":"Hero_Default",
-    "dialogueText":"Time to address ",
-    "leftSide": true
-  },
-  {
-    "characterType":1,
-    "name":"Ally",
-    "atlasImageName":"Heroine_Surprised",
-    "dialogueText":"2 Time to address.",
-    "leftSide": false
-  },
-  {
-    "characterType":0,
-    "name":"Hero",
-    "atlasImageName":"Hero_Default",
-    "dialogueText":"3 Time to addres",
-    "leftSide": false
-  },
-  {
-    "characterType":1,
-    "name":"Ally",
-    "atlasImageName":"Heroine_Surprised",
-    "dialogueText":" 4 Time to address",
-    "leftSide": true
-  }
-  
- ]
+  "dialogues": [
+    {
+      "characterType": 1,
+      "name": "Ally",
+      "atlasImageName": "Heroine_Neutral",
+      "dialogueText": "After defeating the corrupted King, what happened to our hero?",
+      "leftSide": true
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "Well. Heroes are not different from ordinary people.",
+      "leftSide": false
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "Our hero also meets his end eventually.",
+      "leftSide": false
+    },
+    {
+      "characterType": 0,
+      "name": "Tommy",
+      "atlasImageName": "Hero_Surprised",
+      "dialogueText": "Did he die young fighting another dragon?",
+      "leftSide": true
+    },
+    {
+      "characterType": 0,
+      "name": "Tommy",
+      "atlasImageName": "Hero_Angry",
+      "dialogueText": "Or he became the dragon itself?",
+      "leftSide": true
+    },
+    {
+      "characterType": 1,
+      "name": "Ally",
+      "atlasImageName": "Heroine_Angry",
+      "dialogueText": "Guess if I had that power, I would be treated as a monster.",
+      "leftSide": true
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "Unfortunately, no records say anything about our hero.",
+      "leftSide": false
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "But many years later, tales said villages saw...",
+      "leftSide": false
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "...Some strange guy chasing his best friend all day.",
+      "leftSide": false
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "How funny is that?",
+      "leftSide": false
+    }
+  ]
 }
-
-
-
-
-
-
-
-
-
-
-
-

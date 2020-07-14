@@ -10,7 +10,6 @@ namespace Genki.Abilitiy
         public float poisonDmgInSec = 1f;
         private GameObject statusInstance = null;
         private HealthSystem healthSystem = null;
-        private bool targetCanSelfHeal = false;
         public override bool canApply()
         {
             if (!canStartTimer()) return false;
@@ -28,7 +27,6 @@ namespace Genki.Abilitiy
                     GameObject healthBar = GameObject.FindWithTag("PlayerHealthBar");
                     healthBar.transform.Find("Fill").GetComponent<Image>().color = Color.green;
                 }
-                targetCanSelfHeal = healthSystem.canSelfRegen;
                 healthSystem.canSelfRegen = false;
                 statusInstance = attachDebuff(icon);
             }
@@ -38,7 +36,7 @@ namespace Genki.Abilitiy
         {
             if (owner)
             {
-                healthSystem.canSelfRegen = targetCanSelfHeal;
+                healthSystem.canSelfRegen = true;
                 if (owner.transform.CompareTag("Player"))
                 {
                     GameObject healthBar = GameObject.FindWithTag("PlayerHealthBar");

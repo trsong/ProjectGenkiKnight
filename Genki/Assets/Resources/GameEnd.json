@@ -1,0 +1,45 @@
+{
+"dialogues":[
+  {
+    "characterType":0,
+    "name":"Hero",
+    "atlasImageName":"Hero_Default",
+    "dialogueText":"Time to address ",
+    "leftSide": true
+  },
+  {
+    "characterType":1,
+    "name":"Ally",
+    "atlasImageName":"Heroine_Surprised",
+    "dialogueText":"2 Time to address.",
+    "leftSide": false
+  },
+  {
+    "characterType":0,
+    "name":"Hero",
+    "atlasImageName":"Hero_Default",
+    "dialogueText":"3 Time to addres",
+    "leftSide": false
+  },
+  {
+    "characterType":1,
+    "name":"Ally",
+    "atlasImageName":"Heroine_Surprised",
+    "dialogueText":" 4 Time to address",
+    "leftSide": true
+  }
+  
+ ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

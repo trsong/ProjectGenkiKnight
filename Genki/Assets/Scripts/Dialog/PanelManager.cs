@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using JSONFactory;
+using UnityEngine.SceneManagement;
 
 
 public class PanelManager : MonoBehaviour,IManager {
@@ -9,14 +10,15 @@ public class PanelManager : MonoBehaviour,IManager {
     private PanelConfig rightPanel;
     private PanelConfig leftPanel;
     private NarrativeEvent currentEvent;
-    private bool leftCharacterActive = true;
     private int stepIndex = 0;
     public void BootSequence()
     {
         Debug.Log(string.Format("{0} is booting up", GetType().Name));
         rightPanel = GameObject.Find("RightCharacterPanel").GetComponent<PanelConfig>();
         leftPanel = GameObject.Find("LeftCharacterPanel").GetComponent<PanelConfig>();
-        currentEvent = JSONAssembly.RunJSONFactoryForScene(1);
+
+        var sceneId = SceneManager.GetActiveScene().buildIndex;
+        currentEvent = JSONAssembly.RunJSONFactoryForScene(sceneId);
         InitializePanels();
         Debug.Log(string.Format("{0} status ={1}", GetType().Name, currentState));
     }
@@ -31,22 +33,21 @@ public class PanelManager : MonoBehaviour,IManager {
     {
         leftPanel.characterIsTalking = true;
         rightPanel.characterIsTalking = false;
-        leftCharacterActive = !leftCharacterActive;
         leftPanel.Configure(currentEvent.dialogues[stepIndex]);
         rightPanel.Configure(currentEvent.dialogues[stepIndex + 1]);
         StartCoroutine(MasterManager.animationManager.IntroAnimation());
-
         stepIndex++;
     }
 
 
     private void ConfigurePanels()
     {
-        if (leftCharacterActive)
+        var currentDialog = currentEvent.dialogues[stepIndex];
+        if (currentDialog.leftSide)
         {
             leftPanel.characterIsTalking = true;
             rightPanel.characterIsTalking = false;
-            leftPanel.Configure(currentEvent.dialogues[stepIndex]);
+            leftPanel.Configure(currentDialog);
             rightPanel.ToggleCharacterMask();
         }
         else
@@ -54,8 +55,7 @@ public class PanelManager : MonoBehaviour,IManager {
             leftPanel.characterIsTalking = false;
             rightPanel.characterIsTalking = true;
             leftPanel.ToggleCharacterMask(); 
-            rightPanel.Configure(currentEvent.dialogues[stepIndex]);
-
+            rightPanel.Configure(currentDialog);
         }
     }
     void UpdatePanelState()
@@ -63,12 +63,25 @@ public class PanelManager : MonoBehaviour,IManager {
         if (stepIndex < currentEvent.dialogues.Count)
         {
             ConfigurePanels();
-            leftCharacterActive = !leftCharacterActive;
             stepIndex++;
         }
         else
         {
             StartCoroutine(MasterManager.animationManager.ExitAnimation());
+            StartCoroutine(NextScene());
+        }
+    }
+    
+    IEnumerator NextScene()
+    {
+        yield return new WaitForSeconds(1f);
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
         }
     }
     

@@ -13,6 +13,7 @@ public struct Dialogue
     public string name;
     public string atlasImageName;
     public string dialogueText;
+    public bool leftSide;
 }
 public enum CharacterType
 {

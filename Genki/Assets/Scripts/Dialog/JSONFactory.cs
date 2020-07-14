@@ -14,7 +14,8 @@ namespace JSONFactory
     class JSONAssembly
     {
         private static Dictionary<int, string> _resourceList = new Dictionary<int, string> {
-            {1,"/Resources/Event1.json"}
+            {2,"/Resources/Tutorial.json"},
+            {5,"/Resources/GameEnd.json"},
         };
         public static NarrativeEvent RunJSONFactoryForScene(int sceneNumber)
         {

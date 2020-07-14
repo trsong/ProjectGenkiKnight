@@ -1,86 +1,144 @@
 {
   "dialogues": [
     {
-      "characterType": 1,
-      "name": "Ally",
-      "atlasImageName": "Heroine_Neutral",
-      "dialogueText": "After defeating the corrupted King, what happened to our hero?",
-      "leftSide": true
-    },
-    {
-      "characterType": 2,
-      "name": "Master",
-      "atlasImageName": "Wizard",
-      "dialogueText": "Well. Heroes are not different from ordinary people.",
-      "leftSide": false
-    },
-    {
-      "characterType": 2,
-      "name": "Master",
-      "atlasImageName": "Wizard",
-      "dialogueText": "Our hero also meets his end eventually.",
-      "leftSide": false
-    },
-    {
       "characterType": 0,
       "name": "Tommy",
       "atlasImageName": "Hero_Surprised",
-      "dialogueText": "Did he die young fighting another dragon?",
+      "dialogueText": "The castle ruin is just miles away!",
+      "leftSide": false
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "...",
+      "leftSide": false
+    },
+    {
+      "characterType": 1,
+      "name": "Ally",
+      "atlasImageName": "Heroine_Surprised",
+      "dialogueText": "Let’s hurry up!",
       "leftSide": true
     },
     {
-      "characterType": 0,
-      "name": "Tommy",
-      "atlasImageName": "Hero_Angry",
-      "dialogueText": "Or he became the dragon itself?",
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "Slow down kiddo. Forget about why we are here?",
+      "leftSide": false
+    },
+    {
+      "characterType": 1,
+      "name": "Ally",
+      "atlasImageName": "Heroine_Surprised",
+      "dialogueText": "Of course not!",
+      "leftSide": true
+    },
+    {
+      "characterType": 1,
+      "name": "Ally",
+      "atlasImageName": "Heroine_Surprised",
+      "dialogueText": "Monsters keep showing up from the ruin.",
       "leftSide": true
     },
     {
       "characterType": 1,
       "name": "Ally",
       "atlasImageName": "Heroine_Angry",
-      "dialogueText": "Guess if I had that power, I would be treated as a monster.",
+      "dialogueText": "And we were paid to clean them up.",
       "leftSide": true
     },
     {
       "characterType": 2,
       "name": "Master",
       "atlasImageName": "Wizard",
-      "dialogueText": "Unfortunately, no records say anything about our hero.",
+      "dialogueText": "Right. It’s been hundreds of years since ...",
       "leftSide": false
     },
     {
       "characterType": 2,
       "name": "Master",
       "atlasImageName": "Wizard",
-      "dialogueText": "But many years later, tales said villages saw...",
+      "dialogueText": "...the Legend Hero Genki Knight fought against the Corrupted King.",
       "leftSide": false
     },
     {
       "characterType": 2,
       "name": "Master",
       "atlasImageName": "Wizard",
-      "dialogueText": "...Some strange guy chasing his best friend all day.",
+      "dialogueText": "Guess things must have been changed a lot.",
+      "leftSide": false
+    },
+    {
+      "characterType": 0,
+      "name": "Tommy",
+      "atlasImageName": "Hero_Default",
+      "dialogueText": "Can you tell me more about our hero?",
       "leftSide": false
     },
     {
       "characterType": 2,
       "name": "Master",
       "atlasImageName": "Wizard",
-      "dialogueText": "How funny is that?",
+      "dialogueText": "Of course! But before entering the ruin. Safety first.",
+      "leftSide": true
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "Let’s review what I have taught.",
+      "leftSide": true
+    },
+    {
+      "characterType": 0,
+      "name": "Tommy",
+      "atlasImageName": "Hero_Default",
+      "dialogueText": "All right, LEFT JOYSTICK or WSAD to move.",
       "leftSide": false
+    },
+    {
+      "characterType": 1,
+      "name": "Ally",
+      "atlasImageName": "Heroine_Neutral",
+      "dialogueText": "RIGHT JOYSTICK or MOUSE to shoot monsters!",
+      "leftSide": false
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "And don’t forget about magic items. TOUCH them to use.",
+      "leftSide": true
+    },
+    {
+      "characterType": 0,
+      "name": "Tommy",
+      "atlasImageName": "Hero_Angry",
+      "dialogueText": "Ok, we’ve done too much talk. Let’s head to the castle!",
+      "leftSide": false
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "(I can still remember how my master talked about our hero ... ",
+      "leftSide": true
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": " ... back when I was a kid)",
+      "leftSide": true
+    },
+    {
+      "characterType": 2,
+      "name": "Master",
+      "atlasImageName": "Wizard",
+      "dialogueText": "(kiddo was just like him on that day)",
+      "leftSide": true
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-

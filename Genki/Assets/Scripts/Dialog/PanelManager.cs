@@ -24,7 +24,7 @@ public class PanelManager : MonoBehaviour,IManager {
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.anyKeyDown)
         {
             UpdatePanelState();
         }

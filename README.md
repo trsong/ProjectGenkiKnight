@@ -16,6 +16,7 @@ Game Project for CS526
 - [Midterm Retrospective and Action Item](https://docs.google.com/document/d/1Njw5Zg228YvnD1VRBEBNodk5F-VKkmDng-UpH6ZbBjg/edit#)
 - [Final Gameplay URL](https://trsong.github.io/GenkiFinal/)
 - [Final Gameplay (PC) URL](https://trsong.github.io/GenkiFinalPC/)
+- [Final Demo URL](https://youtu.be/D6v638a48k4)
 
 
 # Useful Links

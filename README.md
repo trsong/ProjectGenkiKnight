@@ -11,7 +11,7 @@ Game Project for CS526
 - Difei Sun (sdfqb009@gmail.com) 
 - Tangrui Song (trsong.cs@gmail.com) Linkedin: https://www.linkedin.com/in/tangruisong/
 - Bo Wang (bwang381@usc.edu)
-- Ruofu Wang (ruofuwan@usc.edu)
+- Ruofu Wang (ruofu.w@gmail.com)
 - Jing Wu (jwu832@usc.edu)
 
 # Updates

@@ -8,8 +8,8 @@ Game Project for CS526
 - Mechanism: Move by four directions. Interact with objects. Attack enemies. 
 
 # Team Members 
-- Difei Sun (sdfqb009@gmail.com)
-- Tangrui Song (trsong.cs@gmail.com)
+- Difei Sun (sdfqb009@gmail.com) 
+- Tangrui Song (trsong.cs@gmail.com) Linkedin: https://www.linkedin.com/in/tangruisong/
 - Bo Wang (bwang381@usc.edu)
 - Ruofu Wang (ruofuwan@usc.edu)
 - Jing Wu (jwu832@usc.edu)

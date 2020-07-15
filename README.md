@@ -24,6 +24,8 @@ Game Project for CS526
 - [Final Gameplay URL](https://trsong.github.io/GenkiFinal/)
 - [Final Gameplay (PC) URL](https://trsong.github.io/GenkiFinalPC/)
 - [Final Demo URL](https://youtu.be/D6v638a48k4)
+- [Final Feedback](https://docs.google.com/spreadsheets/d/18kGByc2Ii6ljpb96uCYr5Rlkjbwpx9p4YnHPvyBx15A/edit?usp=sharing)
+
 
 
 # Useful Links

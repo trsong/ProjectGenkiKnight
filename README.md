@@ -1,11 +1,18 @@
 # ProjectGenkiKnight
 Game Project for CS526
 
+# Game Overview
+- Game genre: Dungeon Crawler RPG
+- Elevator Pitch: Genki (Spirit) Knight’s adventure is a top-down view dungeon (or Turn-based, TBD) RPG inspired by Entered The Dungeon, Binding of Isaac, and SoulKnight. The Player can choose either strategy in order to beat the game: explore alternative paths and sneak into different rooms to avoid fighting, or eagerly fight to level up and beat the game directly. There would be random chest drops that can help players improve their ability or weapon. Notice that not all fights can be avoided, and certain enemies are surly deadly. The Player needs to utilize limited resources in order to win those fights.
+- Goal: Loot collectables in a maze and reach destination.
+- Mechanism: Move by four directions. Interact with objects. Attack enemies. 
+
 # Team Members 
-- Difei Sun (sdfqb009@gmail.com)
-- Tangrui Song (trsong.cs@gmail.com)
+- Difei Sun (sdfqb009@gmail.com) 
+- Tangrui Song (trsong.cs@gmail.com) Linkedin: https://www.linkedin.com/in/tangruisong/
 - Bo Wang (bwang381@usc.edu)
 - Ruofu Wang (ruofuwan@usc.edu)
+- Jing Wu (jwu832@usc.edu)
 
 # Updates
 - Jun 3, Git Large File Storage Suport Added, Please Follow [Git Large File Tutorial](https://git-lfs.github.com)
@@ -15,6 +22,11 @@ Game Project for CS526
 - [Midterm Feedback](https://docs.google.com/spreadsheets/d/18kGByc2Ii6ljpb96uCYr5Rlkjbwpx9p4YnHPvyBx15A/edit#gid=469799691)
 - [Midterm Retrospective and Action Item](https://docs.google.com/document/d/1Njw5Zg228YvnD1VRBEBNodk5F-VKkmDng-UpH6ZbBjg/edit#)
 - [Final Gameplay URL](https://trsong.github.io/GenkiFinal/)
+- [Final Gameplay (PC) URL](https://trsong.github.io/GenkiFinalPC/)
+- [Final Demo URL](https://youtu.be/D6v638a48k4)
+- [Final Feedback](https://docs.google.com/spreadsheets/d/18kGByc2Ii6ljpb96uCYr5Rlkjbwpx9p4YnHPvyBx15A/edit?usp=sharing)
+
+
 
 # Useful Links
 - [Past Game for reference: Sokoban Maker Doc](https://docs.google.com/document/d/1dyBqnhk4F1RAbA_PRE2AHykSwVB3C539JTvrGWFR0VU/edit?ts=5e2fa577)
